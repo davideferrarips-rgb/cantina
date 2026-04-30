@@ -1,0 +1,26 @@
+{
+  "name": "La Mia Cantina — Catalogue Millésimé 2026",
+  "short_name": "Cantina",
+  "description": "Lista vini interattiva della mia cantina personale",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f5f0e8",
+  "theme_color": "#6b1a2a",
+  "lang": "it",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>La Mia Cantina — Catalogue Millésimé 2026</title>
+<!-- PWA Meta Tags -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Cantina">
+<meta name="theme-color" content="#6b1a2a">
+<meta name="description" content="Lista vini interattiva della mia cantina personale">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  color-scheme: light;
+  --cream: #f5f0e8;
+  --parchment: #ede4d0;
+  --gold: #b8963e;
+  --gold-light: #d4af5a;
+  --burgundy: #6b1a2a;
+  --dark: #1a1410;
+  --text: #2c2016;
+  --muted: #7a6a55;
+  --border: #c8b89a;
+  --dot-red: #8b1a2e;
+  --dot-white: #d4af37;
+  --dot-rose: #d4607a;
+  --dot-sparkling: #4a7c9e;
+  --dot-passito: #8a5a20;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; background: var(--cream); color: var(--text); }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  min-height: 100vh;
+  color-scheme: light;
+  /* Safe area per iPhone con notch */
+  padding-top: env(safe-area-inset-top);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* HEADER */
+.site-header {
+  text-align: center;
+  padding: 56px 24px 40px;
+  border-bottom: 1px solid var(--border);
+}
+.site-header h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+.site-header .subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+.gold-separator {
+  width: 80px;
+  height: 2px;
+  background: var(--gold);
+  margin: 0 auto;
+}
+
+/* TABS */
+.tab-bar {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  padding: 32px 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+.tab-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 12px 32px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+  margin-bottom: -1px;
+}
+.tab-btn:hover { color: var(--gold); }
+.tab-btn.active {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
+/* MAIN CONTENT */
+.main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+.tab-panel { display: none; padding-top: 48px; }
+.tab-panel.active { display: block; }
+
+/* REGION HEADER */
+.region-header {
+  margin: 48px 0 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+.region-header:first-child { margin-top: 0; }
+.region-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--burgundy);
+  white-space: nowrap;
+}
+.region-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+.region-count {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* COUNTRY HEADER (Resto del Mondo) */
+.country-header {
+  margin: 48px 0 8px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.country-header:first-child { margin-top: 0; }
+
+/* WINE ROW */
+.wine-list { list-style: none; }
+.wine-row {
+  display: grid;
+  grid-template-columns: 24px 1fr 80px 64px;
+  gap: 24px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.15s;
+  border-radius: 2px;
+}
+.wine-row:hover { background: var(--parchment); }
+
+.wine-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  justify-self: center;
+}
+.wine-dot.rosso    { background: var(--dot-red); }
+.wine-dot.bianco   { background: var(--dot-white); border: 1.5px solid var(--border); }
+.wine-dot.rosato   { background: var(--dot-rose); }
+.wine-dot.bollicine { background: var(--dot-sparkling); }
+.wine-dot.passito  { background: var(--dot-passito); }
+
+.wine-info { min-width: 0; }
+.wine-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--dark);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wine-producer {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-style: italic;
+  color: var(--muted);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wine-vintage {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text);
+  text-align: right;
+}
+.wine-value {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gold);
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* LEGEND */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+  padding: 16px 20px;
+  background: var(--parchment);
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* MODAL */
+.modal-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(26,20,16,0.65);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.modal-backdrop.open { display: flex; }
+
+.modal {
+  background: var(--cream);
+  border-radius: 4px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(26,20,16,0.25);
+}
+
+.modal-header {
+  background: var(--parchment);
+  border-bottom: 2px solid var(--gold);
+  padding: 24px 28px 20px;
+  position: relative;
+}
+.modal-meta {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.modal-wine-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--dark);
+  line-height: 1.15;
+  margin-bottom: 4px;
+}
+.modal-producer {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--muted);
+}
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  color: var(--muted);
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+  transition: color 0.15s;
+}
+.modal-close:hover { color: var(--dark); }
+
+.modal-body { padding: 24px 28px 28px; }
+
+.modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 24px;
+  margin-bottom: 20px;
+}
+.modal-field label {
+  display: block;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 3px;
+}
+.modal-field span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--dark);
+}
+.modal-field span.value-gold {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--gold);
+}
+.stars { color: var(--gold); font-size: 14px; letter-spacing: 1px; }
+
+.abbinamenti-label {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+.chip {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 4px 10px;
+  background: var(--parchment);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--muted);
+}
+
+.note-box {
+  background: var(--parchment);
+  border-left: 3px solid var(--gold);
+  padding: 12px 16px;
+  font-size: 12px;
+  color: var(--text);
+  line-height: 1.6;
+  border-radius: 0 2px 2px 0;
+}
+.note-box-label {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+
+/* FOOTER */
+.site-footer {
+  text-align: center;
+  border-top: 1px solid var(--border);
+  padding: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* LOADING INDICATOR */
+.loading-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px;
+  text-align: center;
+}
+.loading-overlay .spinner {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--border);
+  border-top-color: var(--gold);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-bottom: 16px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading-overlay .loading-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .site-header h1 { font-size: 32px; }
+  .wine-row {
+    grid-template-columns: 16px 1fr 52px 56px;
+    gap: 12px;
+  }
+  .wine-name { font-size: 15px; }
+  .modal-grid { grid-template-columns: 1fr; }
+  .tab-btn { padding: 10px 16px; font-size: 10px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <h1>La Mia Cantina</h1>
+  <p class="subtitle">Catalogue Millésimé · 2026</p>
+  <div class="gold-separator"></div>
+</header>
+
+<nav class="tab-bar">
+  <button class="tab-btn active" data-tab="italia">Italia</button>
+  <button class="tab-btn" data-tab="mondo">Resto del Mondo</button>
+</nav>
+
+<main class="main">
+  <div class="legend">
+    <span class="legend-item"><span class="legend-dot" style="background:var(--dot-red)"></span>Rosso</span>
+    <span class="legend-item"><span class="legend-dot" style="background:var(--dot-white);border:1.5px solid var(--border)"></span>Bianco</span>
+    <span class="legend-item"><span class="legend-dot" style="background:var(--dot-rose)"></span>Rosato</span>
+    <span class="legend-item"><span class="legend-dot" style="background:var(--dot-sparkling)"></span>Bollicine</span>
+    <span class="legend-item"><span class="legend-dot" style="background:var(--dot-passito)"></span>Passito</span>
+  </div>
+
+  <div id="tab-italia" class="tab-panel active">
+    <div class="loading-overlay" id="loading-italia">
+      <div class="spinner"></div>
+      <div class="loading-text">Caricamento cantina…</div>
+    </div>
+  </div>
+  <div id="tab-mondo" class="tab-panel">
+    <div class="loading-overlay" id="loading-mondo">
+      <div class="spinner"></div>
+      <div class="loading-text">Caricamento cantina…</div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">✦ Clicca su un vino per aprire la scheda dettaglio ✦</footer>
+
+<!-- MODAL -->
+<div class="modal-backdrop" id="modal-backdrop">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="modal-meta" id="modal-meta"></div>
+      <div class="modal-wine-name" id="modal-wine-name"></div>
+      <div class="modal-producer" id="modal-producer"></div>
+      <button class="modal-close" id="modal-close">×</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<script>
+// === DATA LOADING (fetch dinamico da cantina.json) ===
+let WINES = [];
+
+async function loadWines() {
+  try {
+    const response = await fetch('cantina.json');
+    const data = await response.json();
+    WINES = data.cantina || data;
+    render();
+  } catch (err) {
+    console.error('Errore caricamento dati:', err);
+    // Mostra errore nell'UI
+    const loading = document.getElementById('loading-italia');
+    if (loading) {
+      loading.innerHTML = '<div class="loading-text" style="color:var(--burgundy)">Impossibile caricare i dati. Verifica la connessione.</div>';
+    }
+  }
+}
+
+function render() {
+  // Rimuovi loading
+  const li = document.getElementById('loading-italia');
+  const lm = document.getElementById('loading-mondo');
+  if (li) li.remove();
+  if (lm) lm.remove();
+  // Popola pannelli
+  buildItalia();
+  buildMondo();
+}
+
+// === FUNZIONI ORIGINALI (invariate) ===
+
+function parseValore(str) {
+  if (!str) return 0;
+  return parseFloat(str.replace(/[^\d,]/g,'').replace(',','.')) || 0;
+}
+
+function starsHtml(rating) {
+  if (rating === null || rating === undefined) return '<span style="color:var(--muted)">—</span>';
+  const full = Math.floor(rating);
+  const half = (rating - full) >= 0.25 && (rating - full) < 0.75 ? 1 : 0;
+  const empty = 5 - full - half;
+  let s = '';
+  for (let i=0;i<full;i++) s += '★';
+  if (half) s += '½';
+  for (let i=0;i<empty;i++) s += '☆';
+  return '<span class="stars">' + s + '</span> <span style="font-size:11px;color:var(--muted)">(' + rating.toFixed(1) + ')</span>';
+}
+
+function formatAnnata(w) {
+  if (!w.annata) return 'S.A.';
+  return w.annata;
+}
+
+const TIPO_ORDER = ['rosso','rosato','bianco','bollicine','passito'];
+
+function sortWines(wines) {
+  return [...wines].sort((a,b) => {
+    const ta = TIPO_ORDER.indexOf(a.tipologia);
+    const tb = TIPO_ORDER.indexOf(b.tipologia);
+    if (ta !== tb) return ta - tb;
+    return parseValore(b.valore_mercato) - parseValore(a.valore_mercato);
+  });
+}
+
+function buildWineRow(w) {
+  const li = document.createElement('li');
+  li.className = 'wine-row';
+  li.dataset.id = w.id;
+  li.innerHTML =
+    '<span class="wine-dot ' + w.tipologia + '"></span>' +
+    '<div class="wine-info">' +
+      '<div class="wine-name">' + escHtml(w.nome) + (w.bottiglie > 1 ? ' <span style="font-size:11px;color:var(--muted);font-family:Montserrat,sans-serif;">×' + w.bottiglie + '</span>' : '') + '</div>' +
+      '<div class="wine-producer">' + escHtml(w.produttore) + '</div>' +
+    '</div>' +
+    '<div class="wine-vintage">' + formatAnnata(w) + '</div>' +
+    '<div class="wine-value">' + escHtml(w.valore_mercato) + '</div>';
+  li.addEventListener('click', () => openModal(w));
+  return li;
+}
+
+function escHtml(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function buildRegionSection(regionName, wines) {
+  const section = document.createElement('div');
+  const header = document.createElement('div');
+  header.className = 'region-header';
+  header.innerHTML =
+    '<span class="region-name">' + escHtml(regionName) + '</span>' +
+    '<span class="region-line"></span>' +
+    '<span class="region-count">' + wines.length + ' etichett' + (wines.length === 1 ? 'a' : 'e') + '</span>';
+  section.appendChild(header);
+  const ul = document.createElement('ul');
+  ul.className = 'wine-list';
+  sortWines(wines).forEach(w => ul.appendChild(buildWineRow(w)));
+  section.appendChild(ul);
+  return section;
+}
+
+const REGION_ORDER = ['Piemonte','Valle d\'Aosta','Lombardia','Trentino-Alto Adige','Veneto','Friuli-Venezia Giulia','Emilia-Romagna','Toscana','Umbria','Lazio','Basilicata','Campania','Sicilia','Sardegna'];
+const COUNTRY_FLAGS = {'Francia':'🇫🇷','Romania':'🇷🇴','Spagna':'🇪🇸'};
+
+function buildItalia() {
+  const panel = document.getElementById('tab-italia');
+  const regionMap = {};
+  WINES.filter(w => w.paese === 'Italia').forEach(w => {
+    if (!regionMap[w.regione]) regionMap[w.regione] = [];
+    regionMap[w.regione].push(w);
+  });
+  const regions = REGION_ORDER.filter(r => regionMap[r]);
+  regions.forEach(r => panel.appendChild(buildRegionSection(r, regionMap[r])));
+}
+
+function buildMondo() {
+  const panel = document.getElementById('tab-mondo');
+  const countryMap = {};
+  WINES.filter(w => w.paese !== 'Italia').forEach(w => {
+    if (!countryMap[w.paese]) countryMap[w.paese] = [];
+    countryMap[w.paese].push(w);
+  });
+  const countries = Object.keys(countryMap).sort();
+  countries.forEach(country => {
+    const h = document.createElement('div');
+    h.className = 'country-header';
+    const flag = COUNTRY_FLAGS[country] || '';
+    h.innerHTML = (flag ? '<span style="font-size:18px">' + flag + '</span> ' : '') + escHtml(country);
+    panel.appendChild(h);
+    const sorted = [...countryMap[country]].sort((a,b) => parseValore(b.valore_mercato) - parseValore(a.valore_mercato));
+    const ul = document.createElement('ul');
+    ul.className = 'wine-list';
+    sorted.forEach(w => ul.appendChild(buildWineRow(w)));
+    panel.appendChild(ul);
+  });
+}
+
+function openModal(w) {
+  document.getElementById('modal-meta').textContent =
+    [w.paese, w.regione, w.denominazione].filter(Boolean).join(' · ').toUpperCase();
+  document.getElementById('modal-wine-name').textContent = w.nome;
+  document.getElementById('modal-producer').textContent = w.produttore;
+
+  const body = document.getElementById('modal-body');
+
+  const fields = [
+    ['Valore di mercato', '<span class="value-gold">' + escHtml(w.valore_mercato) + '</span>'],
+    ['Rating XWines', starsHtml(w.rating_xwines)],
+    ['Annata', formatAnnata(w)],
+    ['Denominazione', escHtml(w.denominazione) || '—'],
+    ['Uvaggio', escHtml(w.uvaggio) || '—'],
+    ['ABV', w.abv ? w.abv + '%' : '—'],
+    ['Corpo', escHtml(w.corpo) || '—'],
+    ['Acidità', escHtml(w.acidita) || '—'],
+    ['Finestra consumo', escHtml(w.finestra_consumo) || '—'],
+    ['Anno picco', w.anno_picco ? w.anno_picco : '—'],
+    ['Bottiglie', w.bottiglie || 1],
+  ];
+
+  let html = '<div class="modal-grid">';
+  fields.forEach(([label, val]) => {
+    html += '<div class="modal-field"><label>' + label + '</label><span>' + val + '</span></div>';
+  });
+  html += '</div>';
+
+  if (w.abbinamenti && w.abbinamenti.length > 0) {
+    html += '<div class="abbinamenti-label">Abbinamenti</div>';
+    html += '<div class="chips">';
+    w.abbinamenti.forEach(a => { html += '<span class="chip">' + escHtml(a) + '</span>'; });
+    html += '</div>';
+  }
+
+  if (w.note) {
+    html += '<div class="note-box-label">Note</div>';
+    html += '<div class="note-box">' + escHtml(w.note) + '</div>';
+  }
+
+  body.innerHTML = html;
+  document.getElementById('modal-backdrop').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('modal-backdrop').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.getElementById('modal-close').addEventListener('click', closeModal);
+document.getElementById('modal-backdrop').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeModal();
+});
+
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    this.classList.add('active');
+    document.getElementById('tab-' + this.dataset.tab).classList.add('active');
+  });
+});
+
+// === SERVICE WORKER REGISTRATION ===
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js')
+    .then(reg => console.log('Service Worker registrato:', reg.scope))
+    .catch(err => console.warn('Service Worker non registrato:', err));
+}
+
+// === AVVIO ===
+loadWines();
+</script>
+</body>
+</html>

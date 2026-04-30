@@ -1,0 +1,9 @@
+# File temporanei e di sistema
+.DS_Store
+Thumbs.db
+*.tmp
+.~lock.*
+
+# File Excel (rimangono solo nel progetto locale)
+*.xlsx
+*.xls
