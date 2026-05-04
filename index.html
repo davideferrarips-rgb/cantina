@@ -513,7 +513,38 @@ async function loadWines() {
   try {
     const response = await fetch('cantina.json');
     const data = await response.json();
-    WINES = data.cantina || data;
+    let rawWines = data.cantina || data;
+    
+    // Normalizza il JSON: supporta sia la vecchia struttura che la nuova (chiavi Maiuscole, spazi, array diretti)
+    WINES = rawWines.map(w => {
+      if (w.nome) return w; // È già nel formato corretto
+
+      return {
+        id: w["ID"],
+        nome: w["Nome"],
+        produttore: w["Produttore"],
+        tipologia: w["Tipologia"] ? w["Tipologia"].toLowerCase() : "rosso",
+        metodo: w["Metodo"],
+        denominazione: w["Denominazione"],
+        paese: w["Paese"],
+        regione: w["Regione"],
+        annata: w["Annata"],
+        uvaggio: w["Uvaggio"],
+        corpo: w["Corpo"],
+        acidita: w["Acidita"],
+        abv: w["ABV (%)"],
+        // Gli abbinamenti nel nuovo JSON sono una stringa separata da virgole
+        abbinamenti: w["Abbinamenti"] ? w["Abbinamenti"].split(',').map(s => s.trim()) : [],
+        finestra_consumo: w["Finestra"],
+        anno_picco: w["Anno Picco"],
+        rating_xwines: w["Rating XWines"],
+        // Il nuovo JSON ha un numero puro, lo formattiamo in euro
+        valore_mercato: w["Valore Mercato"] ? "€ " + parseFloat(w["Valore Mercato"]).toFixed(2).replace('.', ',') : "—",
+        bottiglie: w["Bottiglie"],
+        note: w["Note"] || ""
+      };
+    });
+    
     render();
   } catch (err) {
     console.error('Errore caricamento dati:', err);
