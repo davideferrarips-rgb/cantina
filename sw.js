@@ -1,5 +1,5 @@
 // Service Worker — La Mia Cantina PWA
-const CACHE_NAME = 'cantina-v1';
+const CACHE_NAME = 'cantina-v2';
 const DATA_CACHE = 'cantina-data-v1';
 
 // Risorse statiche da pre-cachare

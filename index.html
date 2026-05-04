@@ -521,12 +521,12 @@ async function loadWines() {
 
       return {
         id: w["ID"],
-        nome: w["Nome"],
-        produttore: w["Produttore"],
-        tipologia: w["Tipologia"] ? w["Tipologia"].toLowerCase() : "rosso",
+        nome: w["Nome"] || "Sconosciuto",
+        produttore: w["Produttore"] || "Sconosciuto",
+        tipologia: w["Tipologia"] ? String(w["Tipologia"]).toLowerCase() : "rosso",
         metodo: w["Metodo"],
         denominazione: w["Denominazione"],
-        paese: w["Paese"],
+        paese: w["Paese"] || "Italia",
         regione: w["Regione"],
         annata: w["Annata"],
         uvaggio: w["Uvaggio"],
@@ -534,13 +534,13 @@ async function loadWines() {
         acidita: w["Acidita"],
         abv: w["ABV (%)"],
         // Gli abbinamenti nel nuovo JSON sono una stringa separata da virgole
-        abbinamenti: w["Abbinamenti"] ? w["Abbinamenti"].split(',').map(s => s.trim()) : [],
+        abbinamenti: Array.isArray(w["Abbinamenti"]) ? w["Abbinamenti"] : (w["Abbinamenti"] ? String(w["Abbinamenti"]).split(',').map(s => s.trim()) : []),
         finestra_consumo: w["Finestra"],
         anno_picco: w["Anno Picco"],
         rating_xwines: w["Rating XWines"],
         // Il nuovo JSON ha un numero puro, lo formattiamo in euro
-        valore_mercato: w["Valore Mercato"] ? "€ " + parseFloat(w["Valore Mercato"]).toFixed(2).replace('.', ',') : "—",
-        bottiglie: w["Bottiglie"],
+        valore_mercato: w["Valore Mercato"] ? "€ " + parseFloat(String(w["Valore Mercato"]).replace(',', '.')).toFixed(2).replace('.', ',') : "—",
+        bottiglie: w["Bottiglie"] || 1,
         note: w["Note"] || ""
       };
     });
