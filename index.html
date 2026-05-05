@@ -511,7 +511,8 @@ let WINES = [];
 
 async function loadWines() {
   try {
-    const response = await fetch('cantina.json');
+    // Aggiunto parametro t per bypassare la cache HTTP del browser e forzare il network
+    const response = await fetch('cantina.json?t=' + new Date().getTime());
     const data = await response.json();
     let rawWines = data.cantina || data;
     
