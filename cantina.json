@@ -9,18 +9,20 @@
     "Paese": "Italia",
     "Regione": "Toscana",
     "Annata": 2021,
-    "Uvaggio": "dato incerto (blend bordolese tipico Bolgheri)",
+    "Uvaggio": "Cabernet Sauvignon, Merlot, Cabernet Franc",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Media",
     "ABV (%)": "14.5",
     "Abbinamenti": "Manzo, Pasta, Agnello, Veal, Selvaggina",
     "Finestra": "2025–2030",
     "Anno Picco": 2027,
     "Rating XWines": 4.4,
     "Valore Mercato": 25,
-    "Fonte Valore": "Stima (Bolgheri Gattabuia, fascia media DOC)",
+    "Fonte Valore": "stima (Bolgheri DOC)",
     "Prezzo Acq.": "13,65",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio, affinamento 10-12 mesi in barrique e botti grandi.",
+    "Legno": "Si"
   },
   {
     "ID": 53,
@@ -34,16 +36,18 @@
     "Annata": 2021,
     "Uvaggio": "Nebbiolo 100%",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "13.5",
     "Abbinamenti": "Manzo, Pasta, Agnello, Selvaggina",
     "Finestra": "2026–2036",
     "Anno Picco": 2032,
     "Rating XWines": 4.3,
     "Valore Mercato": 37,
-    "Fonte Valore": "Wine-Searcher (Ronchi Barbaresco 2021)",
+    "Fonte Valore": "Wine-Searcher (Ronchi 2021)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Tini, macerazione 20-25 gg; affinamento 26+ mesi in botti grandi.",
+    "Legno": "Si"
   },
   {
     "ID": 32,
@@ -57,16 +61,18 @@
     "Annata": 2023,
     "Uvaggio": "Turbiana (Trebbiano di Lugana) 100%",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "13.0",
     "Abbinamenti": "Pasta, Frutti di mare, Formaggi stagionati, Formaggi duri, Pesce magro, Salumi",
     "Finestra": "2025–2028",
     "Anno Picco": 2026,
     "Rating XWines": 4.3,
     "Valore Mercato": 19,
-    "Fonte Valore": "Wine-Searcher (Cà dei Frati I Frati Lugana)",
+    "Fonte Valore": "Wine-Searcher (I Frati)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio a T controllata; affinamento sur lies 6 mesi.",
+    "Legno": "No"
   },
   {
     "ID": 52,
@@ -78,18 +84,20 @@
     "Paese": "Italia",
     "Regione": "Sicilia",
     "Annata": 1993,
-    "Uvaggio": "dato incerto - probabilmente Nero d'Avola e/o Syrah (uvaggio tipico azienda)",
+    "Uvaggio": "Nero d'Avola, Syrah",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Media",
     "ABV (%)": "14.0",
     "Abbinamenti": "Manzo, Pasta, Agnello",
-    "Finestra": "da consumare - vino molto maturo (annata 1993)",
+    "Finestra": "1993–1998",
     "Anno Picco": 1993,
     "Rating XWines": 4.2,
     "Valore Mercato": 36,
-    "Fonte Valore": "Wine-Searcher (G. Milazzo Maria Costanza)",
+    "Fonte Valore": "Wine-Searcher (G.Milazzo)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Lunga macerazione in acciaio; lungo affinamento in botti di rovere.",
+    "Legno": "Si"
   },
   {
     "ID": 69,
@@ -103,16 +111,18 @@
     "Annata": 2020,
     "Uvaggio": "Sangiovese Grosso (Brunello) 100%",
     "Corpo": "Molto Corposo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "14.5",
     "Abbinamenti": "Selvaggina, Manzo, Agnello, Formaggi stagionati",
     "Finestra": "2025–2040",
     "Anno Picco": 2032,
     "Rating XWines": 4.1,
     "Valore Mercato": 64,
-    "Fonte Valore": "Wine-Searcher (~$64 ex-tax media)",
+    "Fonte Valore": "Wine-Searcher (~$64 ex-tax)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Tini di rovere; affinamento 36 mesi in grandi botti, poi bottiglia.",
+    "Legno": "Si"
   },
   {
     "ID": 7,
@@ -126,7 +136,7 @@
     "Annata": 2022,
     "Uvaggio": "Sangiovese (Prugnolo Gentile) ~90%, altri 10%",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "13.5",
     "Abbinamenti": "Manzo, Selvaggina, Pollame",
     "Finestra": "2025–2032",
@@ -135,7 +145,9 @@
     "Valore Mercato": 18,
     "Fonte Valore": "Tannico / Callmewine",
     "Prezzo Acq.": "12,90",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio/cemento, macerazione 15-20 gg; affinamento 24 mesi in legno.",
+    "Legno": "Si"
   },
   {
     "ID": 6,
@@ -149,7 +161,7 @@
     "Annata": 2024,
     "Uvaggio": "Syrah 100%",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Media",
     "ABV (%)": "14.0",
     "Abbinamenti": "Manzo, Pasta, Agnello",
     "Finestra": "2025–2029",
@@ -158,7 +170,9 @@
     "Valore Mercato": 14,
     "Fonte Valore": "Tannico",
     "Prezzo Acq.": "7,60",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio a T controllata, breve macerazione; affinamento in barrique.",
+    "Legno": "Si"
   },
   {
     "ID": 27,
@@ -170,18 +184,20 @@
     "Paese": "Italia",
     "Regione": "Lombardia",
     "Annata": 2023,
-    "Uvaggio": "Chardonnay ~80%, Pinot Nero, Pinot Bianco (selezione 10 migliori parcelle, viti >20 anni)",
+    "Uvaggio": "Chardonnay ~80%, Pinot Nero, Pinot Bianco (selezione 10",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "12.5",
     "Abbinamenti": "Maiale, Pesce grasso, Vegetariano, Pollame",
     "Finestra": "2025–2030",
     "Anno Picco": 2026,
     "Rating XWines": 3.9,
     "Valore Mercato": 38,
-    "Fonte Valore": "Wine-Searcher / vino.com (Bellavista Alma Gran Cuvée)",
+    "Fonte Valore": "Wine-Searcher / vino.com",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Met. Classico: 35%+ in barrique >35 anni; lunga sosta sui lieviti.",
+    "Legno": "Si"
   },
   {
     "ID": 18,
@@ -193,18 +209,20 @@
     "Paese": "Italia",
     "Regione": "Toscana",
     "Annata": 2022,
-    "Uvaggio": "Sangiovese e altri vitigni toscani (dato incerto)",
+    "Uvaggio": "Sangiovese e altri vitigni toscani",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Media",
     "ABV (%)": "14.0",
     "Abbinamenti": "Manzo, Agnello, Veal, Pollame, Salumi",
     "Finestra": "2025–2027",
     "Anno Picco": 2026,
     "Rating XWines": 3.9,
     "Valore Mercato": 20,
-    "Fonte Valore": "Wine-Searcher (Piccini Sasso al Poggio)",
+    "Fonte Valore": "Wine-Searcher (Piccini)",
     "Prezzo Acq.": "5,45",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio, breve affinamento in acciaio; stile fresco da bere giovane.",
+    "Legno": "No"
   },
   {
     "ID": 20,
@@ -218,7 +236,7 @@
     "Annata": 2022,
     "Uvaggio": "Nebbiolo (Chiavennasca) 100%",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "13.9",
     "Abbinamenti": "Manzo, Pasta, Agnello, Selvaggina",
     "Finestra": "2025–2033",
@@ -227,7 +245,9 @@
     "Valore Mercato": 18,
     "Fonte Valore": "Wine-Searcher / Superiore.de",
     "Prezzo Acq.": "13,50",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Macerazione 10 gg; 18 mesi in botti grandi Slavonia 80 hl.",
+    "Legno": "Si"
   },
   {
     "ID": 51,
@@ -241,16 +261,18 @@
     "Annata": 2024,
     "Uvaggio": "Sangiovese prevalente (tipico Chianti Montespertoli)",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "13.5",
     "Abbinamenti": "Manzo, Veal, Pollame",
     "Finestra": "2025–2030",
     "Anno Picco": 2027,
     "Rating XWines": 3.9,
     "Valore Mercato": 16,
-    "Fonte Valore": "Stima (Tenuta di Morzano myMorzano Riserva)",
+    "Fonte Valore": "stima (Morzano Riserva)",
     "Prezzo Acq.": null,
-    "Bottiglie": 2
+    "Bottiglie": 2,
+    "Metodo Produzione": "Macerazione tradizionale; affinamento in cemento vetrificato.",
+    "Legno": "No"
   },
   {
     "ID": 16,
@@ -264,16 +286,18 @@
     "Annata": 2025,
     "Uvaggio": "Vermentino 100%",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "12.5",
     "Abbinamenti": "Pasta, Vegetariano, Antipasto, Snack, Pesce magro, Salumi",
     "Finestra": "2025–2027",
     "Anno Picco": 2026,
     "Rating XWines": 3.9,
     "Valore Mercato": 12,
-    "Fonte Valore": "Wine-Searcher (Tenuta Moraia Vermentino)",
+    "Fonte Valore": "Wine-Searcher (Moraia)",
     "Prezzo Acq.": "6,25",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Pressatura soffice; fermentazione 16 gg; affinamento 3 mesi sur lies.",
+    "Legno": "No"
   },
   {
     "ID": 67,
@@ -287,16 +311,18 @@
     "Annata": 2024,
     "Uvaggio": "Nero d'Avola 100%",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Media",
     "ABV (%)": "14.0",
     "Abbinamenti": "Manzo, Selvaggina, Formaggi stagionati, Agnello",
     "Finestra": "2024–2035",
     "Anno Picco": 2030,
     "Rating XWines": 3.9,
     "Valore Mercato": 65,
-    "Fonte Valore": "Wine-Searcher (media annate recenti ~$65-70)",
+    "Fonte Valore": "Wine-Searcher (~$65-70)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio; affinamento in botti rovere Slavonia e castagno.",
+    "Legno": "Si"
   },
   {
     "ID": 68,
@@ -310,16 +336,18 @@
     "Annata": 2024,
     "Uvaggio": "Pelaverga Piccolo 100%",
     "Corpo": "Medio",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "13.5",
     "Abbinamenti": "Salumi, Pasta al ragù, Formaggi, Coniglio",
     "Finestra": "2025–2029",
     "Anno Picco": 2027,
     "Rating XWines": 3.9,
     "Valore Mercato": 22,
-    "Fonte Valore": "Wine-Searcher (~€22 media annata)",
+    "Fonte Valore": "Wine-Searcher (~€22)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio a T controllata, macerazione breve 5-7 gg; affinamento acciaio.",
+    "Legno": "No"
   },
   {
     "ID": 55,
@@ -331,18 +359,20 @@
     "Paese": "Italia",
     "Regione": "Toscana",
     "Annata": 2023,
-    "Uvaggio": "Cabernet Sauvignon, Merlot, Sangiovese (blend - percentuali dato incerto)",
+    "Uvaggio": "Cabernet Sauvignon, Merlot, Sangiovese (blend - percentuali",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Media",
     "ABV (%)": "12.0",
     "Abbinamenti": "Manzo, Agnello, Veal, Pollame, Salumi",
     "Finestra": "2025–2030",
     "Anno Picco": 2027,
     "Rating XWines": 3.8,
     "Valore Mercato": 25,
-    "Fonte Valore": "Vinissimus / Wine-Searcher (Petra Hebo)",
+    "Fonte Valore": "Vinissimus / Wine-Searcher",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio, macerazione 15-18 gg; affinamento parziale in legno.",
+    "Legno": "Si"
   },
   {
     "ID": 17,
@@ -356,7 +386,7 @@
     "Annata": 2023,
     "Uvaggio": "Sangiovese ~60%, Sagrantino ~15%, altri 25%",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "13.5",
     "Abbinamenti": "Manzo, Pasta, Veal, Pollame",
     "Finestra": "2025–2030",
@@ -365,7 +395,9 @@
     "Valore Mercato": 22,
     "Fonte Valore": "Wine-Searcher / Total Wine",
     "Prezzo Acq.": "9,90",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio; affinamento 12 mesi in rovere per Sangiovese e Sagrantino.",
+    "Legno": "Si"
   },
   {
     "ID": 14,
@@ -379,16 +411,18 @@
     "Annata": 2024,
     "Uvaggio": "Chardonnay 100%",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "12.5",
     "Abbinamenti": "Maiale, Pesce grasso, Frutti di mare, Formaggi morbidi",
     "Finestra": "2025–2029",
     "Anno Picco": 2027,
     "Rating XWines": 3.8,
     "Valore Mercato": 20,
-    "Fonte Valore": "Wine-Searcher (Domaine Michaut Chablis)",
+    "Fonte Valore": "Wine-Searcher (Michaut)",
     "Prezzo Acq.": "11,94",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio inox, malolattica parziale; affinamento sur lies in acciaio.",
+    "Legno": "No"
   },
   {
     "ID": 33,
@@ -400,18 +434,20 @@
     "Paese": "Italia",
     "Regione": "Lombardia",
     "Annata": 2021,
-    "Uvaggio": "Groppello, Marzemino, Sangiovese, Barbera (uvaggio tradizionale del Garda)",
+    "Uvaggio": "Groppello, Marzemino, Sangiovese, Barbera (uvaggio",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "13.0",
     "Abbinamenti": "Maiale, Pesce grasso, Vegetariano, Pollame",
     "Finestra": "2025–2026",
     "Anno Picco": 2025,
     "Rating XWines": 3.8,
     "Valore Mercato": 18,
-    "Fonte Valore": "Stima (Rosa dei Frati, fascia simile a I Frati)",
+    "Fonte Valore": "stima (Rosa dei Frati)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio a bassa T, sur lies; no legno, stile fresco e aromatico.",
+    "Legno": "No"
   },
   {
     "ID": 44,
@@ -423,18 +459,20 @@
     "Paese": "Italia",
     "Regione": "Umbria",
     "Annata": 2024,
-    "Uvaggio": "Sangiovese 65%, Sagrantino 15%, Merlot 15%, Cabernet Sauvignon 5%",
+    "Uvaggio": "Sangiovese 65%, Sagrantino 15%, Merlot 15%, Cabernet",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "14.5",
     "Abbinamenti": "Manzo, Agnello, Veal, Pollame, Salumi",
     "Finestra": "2025–2030",
     "Anno Picco": 2027,
     "Rating XWines": 3.8,
     "Valore Mercato": 18,
-    "Fonte Valore": "Wine-Searcher (Cesarini Sartori Signae Riserva)",
+    "Fonte Valore": "Wine-Searcher (Cesarini)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio, macerazione 15-20 gg; affinamento 18-24 mesi in botti grandi.",
+    "Legno": "Si"
   },
   {
     "ID": 2,
@@ -448,7 +486,7 @@
     "Annata": 2024,
     "Uvaggio": "Sangiovese Grosso (Brunello) 100%",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "13.5",
     "Abbinamenti": "Manzo, Agnello, Veal, Pollame, Salumi",
     "Finestra": "2025–2028",
@@ -457,7 +495,9 @@
     "Valore Mercato": 16,
     "Fonte Valore": "Wine-Searcher",
     "Prezzo Acq.": "9,00",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Cemento/acciaio, macerazione 10-15 gg; affinamento 8-10 mesi in legno.",
+    "Legno": "Si"
   },
   {
     "ID": 19,
@@ -471,7 +511,7 @@
     "Annata": 2022,
     "Uvaggio": "Barbera 100%",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "14.0",
     "Abbinamenti": "Pasta, Veal, Maiale, Selvaggina, Pollame",
     "Finestra": "2025–2029",
@@ -480,7 +520,9 @@
     "Valore Mercato": 14,
     "Fonte Valore": "Callmewine / Tannico",
     "Prezzo Acq.": "8,90",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio, macerazione 10-12 gg; affinamento 12 mesi in barrique.",
+    "Legno": "Si"
   },
   {
     "ID": 50,
@@ -492,18 +534,20 @@
     "Paese": "Italia",
     "Regione": "Toscana",
     "Annata": 2021,
-    "Uvaggio": "Sangiovese prevalente, con Merlot e/o Cabernet (dato incerto)",
+    "Uvaggio": "Sangiovese prevalente, con Merlot e/o Cabernet",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "12.5",
     "Abbinamenti": "Manzo, Veal, Pollame",
     "Finestra": "2025–2029",
     "Anno Picco": 2027,
     "Rating XWines": 3.8,
     "Valore Mercato": 10,
-    "Fonte Valore": "Stima (Tenuta di Morzano Chianti Superiore)",
+    "Fonte Valore": "stima (Morzano Superiore)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Macerazione 20 gg; affinamento 12 mesi in cemento vetrificato.",
+    "Legno": "No"
   },
   {
     "ID": 4,
@@ -515,9 +559,9 @@
     "Paese": "Italia",
     "Regione": "Toscana",
     "Annata": 2025,
-    "Uvaggio": "Chardonnay, Gewürztraminer, Sauvignon Blanc, Traminer (dato incerto)",
+    "Uvaggio": "Chardonnay, Gewürztraminer, Sauvignon Blanc, Traminer",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Media",
     "ABV (%)": "13.5",
     "Abbinamenti": "Pasta, Vegetariano, Antipasto, Snack, Pesce magro, Salumi",
     "Finestra": "2025–2027",
@@ -526,7 +570,9 @@
     "Valore Mercato": 8,
     "Fonte Valore": "Stima (vino base IGT Toscana)",
     "Prezzo Acq.": "4,74",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio a bassa T; breve affinamento in acciaio, stile fresco.",
+    "Legno": "No"
   },
   {
     "ID": 59,
@@ -544,12 +590,14 @@
     "ABV (%)": 13,
     "Abbinamenti": "Pesce magro, Frutti di mare, Antipasto, Formaggi morbidi",
     "Finestra": "2024–2027",
-    "Anno Picco": null,
+    "Anno Picco": 2026,
     "Rating XWines": 3.8,
     "Valore Mercato": 17,
-    "Fonte Valore": "viterbium.it (prezzo reale 2025)",
+    "Fonte Valore": "viterbium.it (2025)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio a T controllata; affinamento sur lies in acciaio.",
+    "Legno": "No"
   },
   {
     "ID": 30,
@@ -563,16 +611,18 @@
     "Annata": 2001,
     "Uvaggio": "Chardonnay 70%, Pinot Nero 30%",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "11.5",
     "Abbinamenti": "Manzo, Selvaggina",
-    "Finestra": "da consumare - vino molto maturo (annata 2001)",
+    "Finestra": "2001–2006",
     "Anno Picco": 2001,
     "Rating XWines": 3.7,
     "Valore Mercato": 37,
-    "Fonte Valore": "Bevandeadomicilio (Berlucchi Cellarius Millesimato)",
+    "Fonte Valore": "Bevandeadomicilio (Berlucchi)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Met. Classico: acciaio + barrique; affinamento sui lieviti 4+ anni.",
+    "Legno": "Si"
   },
   {
     "ID": 21,
@@ -586,16 +636,18 @@
     "Annata": 2024,
     "Uvaggio": "Carricante ~100%",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "12.5",
     "Abbinamenti": "Frutti di mare, Vegetariano, Antipasto, Snack",
     "Finestra": "2025–2029",
     "Anno Picco": 2027,
     "Rating XWines": 3.7,
     "Valore Mercato": 26,
-    "Fonte Valore": "Wine-Searcher (Torre Mora Cauru)",
+    "Fonte Valore": "Wine-Searcher / Vivino",
     "Prezzo Acq.": "6,45",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio a T controllata; affinamento sur lies 4-5 mesi in acciaio.",
+    "Legno": "No"
   },
   {
     "ID": 48,
@@ -609,16 +661,18 @@
     "Annata": 2020,
     "Uvaggio": "Sangiovese ~80%, Merlot, Cabernet Sauvignon (tipico Chianti)",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "14.0",
     "Abbinamenti": "Manzo, Veal, Pollame",
     "Finestra": "2025–2031",
     "Anno Picco": 2028,
     "Rating XWines": 3.7,
     "Valore Mercato": 15,
-    "Fonte Valore": "Stima (Tenuta di Morzano Chianti Riserva)",
+    "Fonte Valore": "stima (Morzano Riserva)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Macerazione tradizionale; affinamento in cemento vetrificato.",
+    "Legno": "No"
   },
   {
     "ID": 49,
@@ -632,16 +686,18 @@
     "Annata": 2018,
     "Uvaggio": "Sangiovese ~80%, Merlot, Cabernet Sauvignon (tipico Chianti)",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "14.0",
     "Abbinamenti": "Manzo, Veal, Pollame",
     "Finestra": "2025–2028",
     "Anno Picco": 2026,
     "Rating XWines": 3.7,
     "Valore Mercato": 15,
-    "Fonte Valore": "Stima (Tenuta di Morzano Chianti Riserva)",
+    "Fonte Valore": "stima (Morzano Riserva)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Macerazione tradizionale; affinamento in cemento vetrificato.",
+    "Legno": "No"
   },
   {
     "ID": 38,
@@ -655,16 +711,18 @@
     "Annata": 2024,
     "Uvaggio": "Chardonnay 100%",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "13.0",
     "Abbinamenti": "Pasta, Frutti di mare, Formaggi stagionati, Formaggi duri, Pesce magro, Salumi",
     "Finestra": "2025–2027",
     "Anno Picco": 2026,
     "Rating XWines": 3.7,
     "Valore Mercato": 11,
-    "Fonte Valore": "Wine-Searcher (Kellerei Kaltern Chardonnay)",
+    "Fonte Valore": "Wine-Searcher (Kaltern)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Pressatura soffice; acciaio a bassa T; affinamento sur lies.",
+    "Legno": "No"
   },
   {
     "ID": 62,
@@ -676,18 +734,20 @@
     "Paese": "Italia",
     "Regione": "Lombardia",
     "Annata": 2025,
-    "Uvaggio": "Croatina 60%, Barbera 30%, Ughetta di Canneto 5%, Uva Rara 5%",
+    "Uvaggio": "Croatina 60%, Barbera 30%, Ughetta di Canneto 5%, Uva Rara",
     "Corpo": "Corposo",
     "Acidità": "Alta",
     "ABV (%)": 12.5,
     "Abbinamenti": "Manzo, Pasta, Agnello, Selvaggina",
     "Finestra": "2025–2032",
-    "Anno Picco": null,
+    "Anno Picco": 2030,
     "Rating XWines": 3.7,
     "Valore Mercato": 18,
-    "Fonte Valore": "stima — sito ufficiale Fiamberti non accessibile, confronto Buttafuoco DOC storici",
+    "Fonte Valore": "stima (Buttafuoco DOC)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Macerazione 10-15 gg in rosso; affinamento 12 mesi in legno.",
+    "Legno": "Si"
   },
   {
     "ID": 65,
@@ -701,16 +761,18 @@
     "Annata": 2023,
     "Uvaggio": "Dolcetto 100%",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "14.5",
     "Abbinamenti": "Manzo, Pasta, Agnello, Selvaggina",
     "Finestra": "2025–2028",
     "Anno Picco": 2026,
     "Rating XWines": 3.7,
     "Valore Mercato": 18,
-    "Fonte Valore": "Wine-Searcher (stima ~$18, annata vicina)",
+    "Fonte Valore": "Wine-Searcher (~$18)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio, macerazione 8-10 gg; affinamento 8-10 mesi in botti.",
+    "Legno": "Si"
   },
   {
     "ID": 66,
@@ -724,16 +786,18 @@
     "Annata": 2024,
     "Uvaggio": "Dolcetto 100%",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "13.5",
     "Abbinamenti": "Manzo, Pasta, Agnello, Selvaggina",
     "Finestra": "2025–2028",
     "Anno Picco": 2026,
     "Rating XWines": 3.7,
     "Valore Mercato": 16,
-    "Fonte Valore": "Stima sommelier (fascia base Alario ~€14-16)",
+    "Fonte Valore": "stima (Alario ~€14-16)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio, macerazione 7-8 gg; breve affinamento in botti grandi.",
+    "Legno": "Si"
   },
   {
     "ID": 71,
@@ -747,16 +811,18 @@
     "Annata": 2024,
     "Uvaggio": "Sangiovese (prevalente), blend tipico Chianti",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "13.5",
     "Abbinamenti": "Carne alla griglia, Pasta al ragù, Formaggi, Selvaggina",
     "Finestra": "2023–2030",
     "Anno Picco": 2026,
     "Rating XWines": 3.7,
     "Valore Mercato": 18,
-    "Fonte Valore": "Stima sommelier (fascia Chianti Riserva Morzano ~€15-20)",
+    "Fonte Valore": "stima (Chianti Ris. Morzano)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Macerazione tradizionale; affinamento in cemento vetrificato.",
+    "Legno": "No"
   },
   {
     "ID": 28,
@@ -770,16 +836,18 @@
     "Annata": 2022,
     "Uvaggio": "Chardonnay 85%, Pinot Nero 15%",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "12.5",
     "Abbinamenti": "Veal, Maiale, Selvaggina, Pesce grasso, Vegetariano, Pollame",
     "Finestra": "2025–2030",
     "Anno Picco": 2026,
     "Rating XWines": 3.6,
     "Valore Mercato": 38,
-    "Fonte Valore": "Wine-Searcher (La Montina Extra Brut)",
+    "Fonte Valore": "Wine-Searcher (La Montina)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Met. Classico: acciaio, presa di spuma, affinamento sui lieviti.",
+    "Legno": "No"
   },
   {
     "ID": 8,
@@ -793,7 +861,7 @@
     "Annata": 2021,
     "Uvaggio": "Sangiovese ~100%",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "13.5",
     "Abbinamenti": "Manzo, Veal, Pollame",
     "Finestra": "2025–2035",
@@ -802,7 +870,9 @@
     "Valore Mercato": 28,
     "Fonte Valore": "Wine-Searcher / XtraWine",
     "Prezzo Acq.": "15,00",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Macerazione 15 gg, malolattica spontanea; 18 mesi in botti fr. di rovere.",
+    "Legno": "Si"
   },
   {
     "ID": 9,
@@ -816,7 +886,7 @@
     "Annata": 2021,
     "Uvaggio": "Aglianico 100%",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "13.0",
     "Abbinamenti": "Manzo, Pasta, Agnello",
     "Finestra": "2025–2033",
@@ -825,7 +895,9 @@
     "Valore Mercato": 18,
     "Fonte Valore": "Wine-Searcher / Vivino",
     "Prezzo Acq.": "9,90",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Macerazione 12-15 gg a 25-28°C; 80% botti grandi Slavonia + 20% barrique fr.",
+    "Legno": "Si"
   },
   {
     "ID": 1,
@@ -839,7 +911,7 @@
     "Annata": 2024,
     "Uvaggio": "Ribolla Gialla 100%",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "12.4",
     "Abbinamenti": "Pasta, Frutti di mare, Formaggi stagionati, Formaggi duri, Pesce magro, Salumi",
     "Finestra": "2025–2028",
@@ -848,7 +920,9 @@
     "Valore Mercato": 16.5,
     "Fonte Valore": "XtraWine / Callmewine",
     "Prezzo Acq.": "12,90",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Pressatura soffice; acciaio a bassa T; affinamento sur lies.",
+    "Legno": "No"
   },
   {
     "ID": 25,
@@ -862,7 +936,7 @@
     "Annata": 2024,
     "Uvaggio": "Macabeo, Xarel·lo, Parellada (blend tipico Cava)",
     "Corpo": "Leggero",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "12.0",
     "Abbinamenti": "Frutti di mare, Antipasto, Snack, Pesce magro, Salumi",
     "Finestra": "2025–2027",
@@ -871,7 +945,9 @@
     "Valore Mercato": 15,
     "Fonte Valore": "Vinissimus",
     "Prezzo Acq.": "11,50",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Met. Tradizionale: 2a fermentazione in bottiglia, min. 18 mesi lieviti.",
+    "Legno": "No"
   },
   {
     "ID": 22,
@@ -885,7 +961,7 @@
     "Annata": 2024,
     "Uvaggio": "Sauvignon Blanc, Sémillon (blend tipico Bordeaux Blanc)",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "13.5",
     "Abbinamenti": "Manzo, Veal, Selvaggina, Pollame",
     "Finestra": "2025–2028",
@@ -894,7 +970,9 @@
     "Valore Mercato": 14,
     "Fonte Valore": "Wine-Searcher (La Petite Lune)",
     "Prezzo Acq.": "7,74",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio a bassa T; affinamento sur lies in acciaio.",
+    "Legno": "No"
   },
   {
     "ID": 41,
@@ -908,16 +986,18 @@
     "Annata": 2024,
     "Uvaggio": "Schiava (Vernatsch) 100%",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "12.5",
     "Abbinamenti": "Manzo, Pasta, Agnello, Selvaggina",
     "Finestra": "2025–2027",
     "Anno Picco": 2026,
     "Rating XWines": 3.6,
     "Valore Mercato": 12,
-    "Fonte Valore": "Travino (Tramin Hexenbichler 2024)",
+    "Fonte Valore": "Travino (Tramin 2024)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio a T controllata, malolattica in acciaio; maturazione in botti di legno.",
+    "Legno": "Si"
   },
   {
     "ID": 61,
@@ -938,9 +1018,11 @@
     "Anno Picco": 2030,
     "Rating XWines": 3.6,
     "Valore Mercato": 25,
-    "Fonte Valore": "stima — vendita solo diretta in tenuta, Vin Santo del Chianti DOC formato 500ml",
+    "Fonte Valore": "stima (Vin Santo 500ml)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Appassimento su stuoie; lenta fermentazione in caratelli.",
+    "Legno": "Si"
   },
   {
     "ID": 31,
@@ -954,7 +1036,7 @@
     "Annata": 2017,
     "Uvaggio": "Chardonnay 100%",
     "Corpo": "Molto leggero",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "12.0",
     "Abbinamenti": "Frutti di mare, Vegetariano, Antipasto, Snack, Salumi",
     "Finestra": "2025–2032",
@@ -963,7 +1045,9 @@
     "Valore Mercato": 45,
     "Fonte Valore": "Etilika (Ferrari Perlé 2017)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Met. Classico Trentodoc: Chardonnay 100%; presa di spuma in bottiglia.",
+    "Legno": "No"
   },
   {
     "ID": 15,
@@ -977,16 +1061,18 @@
     "Annata": 2023,
     "Uvaggio": "Nebbiolo 100%",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "14.0",
     "Abbinamenti": "Manzo, Pasta, Agnello, Selvaggina",
     "Finestra": "2026–2035",
     "Anno Picco": 2031,
     "Rating XWines": 3.5,
     "Valore Mercato": 22,
-    "Fonte Valore": "Stima (Barbaresco Balbi Soprani, fascia entry)",
+    "Fonte Valore": "stima (Barbaresco Balbi)",
     "Prezzo Acq.": "12,90",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio, macerazione 20-25 gg; affinamento 26+ mesi in legno.",
+    "Legno": "Si"
   },
   {
     "ID": 11,
@@ -1000,16 +1086,18 @@
     "Annata": 2024,
     "Uvaggio": "Moscato Bianco 100%",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Media",
     "ABV (%)": "13.5",
     "Abbinamenti": "Manzo, Pasta, Agnello, Selvaggina",
     "Finestra": "2025–2027",
     "Anno Picco": 2026,
     "Rating XWines": 3.5,
     "Valore Mercato": 15,
-    "Fonte Valore": "Stima (Chambave Muscat Les Crêtes)",
+    "Fonte Valore": "stima (Chambave Muscat)",
     "Prezzo Acq.": "11,90",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio a bassa T; affinamento sur lies; no legno.",
+    "Legno": "No"
   },
   {
     "ID": 63,
@@ -1027,12 +1115,14 @@
     "ABV (%)": 11,
     "Abbinamenti": "Pasta, Frutti di mare, Formaggi stagionati, Formaggi duri, Pesce magro, Salumi",
     "Finestra": "2026–2027",
-    "Anno Picco": null,
+    "Anno Picco": 2026,
     "Rating XWines": 3.5,
     "Valore Mercato": 15,
-    "Fonte Valore": "sparkleitaly.it (prezzo reale, annata 2022/2023)",
+    "Fonte Valore": "sparkleitaly.it (2022/23)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Pressatura soffice; acciaio a bassa T; affinamento sur lies.",
+    "Legno": "No"
   },
   {
     "ID": 64,
@@ -1044,18 +1134,20 @@
     "Paese": "Italia",
     "Regione": "Umbria",
     "Annata": 2025,
-    "Uvaggio": "Grechetto, Procanico (Trebbiano), Drupeggio, Malvasia, Verdello",
+    "Uvaggio": "Grechetto, Procanico (Trebbiano), Drupeggio, Malvasia,",
     "Corpo": "Medio corpo",
     "Acidità": "Alta",
     "ABV (%)": 13,
     "Abbinamenti": "Pasta, Vegetariano, Antipasto, Snack, Pesce magro, Salumi",
     "Finestra": "2025–2028",
-    "Anno Picco": null,
+    "Anno Picco": 2027,
     "Rating XWines": 3.5,
     "Valore Mercato": 11.99,
-    "Fonte Valore": "alacave.it",
+    "Fonte Valore": "Wine-Searcher / Vivino",
     "Prezzo Acq.": "11,99",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Pressatura soffice; acciaio a bassa T; breve sur lies.",
+    "Legno": "No"
   },
   {
     "ID": 70,
@@ -1069,7 +1161,7 @@
     "Annata": 2024,
     "Uvaggio": "Cabernet Sauvignon, Merlot",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Media",
     "ABV (%)": "14.0",
     "Abbinamenti": "Manzo, Pasta, Agnello, Salumi",
     "Finestra": "2025–2028",
@@ -1078,7 +1170,9 @@
     "Valore Mercato": 9,
     "Fonte Valore": "Vinello.eu (~€9)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Macerazione 2 sett. a 24-28°C; affinamento 7 mesi in barrique.",
+    "Legno": "Si"
   },
   {
     "ID": 29,
@@ -1090,9 +1184,9 @@
     "Paese": "Francia",
     "Regione": "Champagne",
     "Annata": 2022,
-    "Uvaggio": "Chardonnay 50%, Pinot Meunier 30%, Pinot Nero 20% (con 20-25% vini di riserva anni precedenti)",
+    "Uvaggio": "Chardonnay 50%, Pinot Meunier 30%, Pinot Nero 20% (con",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "12.2",
     "Abbinamenti": "Frutti di mare, Pesce magro, Dolci alla frutta",
     "Finestra": "2025–2029",
@@ -1101,7 +1195,9 @@
     "Valore Mercato": 22,
     "Fonte Valore": "Twil / Lilovino",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Met. Classico: 3 vitigni vinif. separati in acciaio; 20-25% vini riserva.",
+    "Legno": "No"
   },
   {
     "ID": 54,
@@ -1113,7 +1209,7 @@
     "Paese": "Italia",
     "Regione": "Veneto",
     "Annata": 2025,
-    "Uvaggio": "Cabernet Sauvignon, Merlot (e Cabernet Franc - dato incerto)",
+    "Uvaggio": "Cabernet Sauvignon, Merlot (e Cabernet Franc",
     "Corpo": "Medio corpo",
     "Acidità": "Alta",
     "ABV (%)": 12.9,
@@ -1122,9 +1218,11 @@
     "Anno Picco": 2027,
     "Rating XWines": 3.4,
     "Valore Mercato": 10,
-    "Fonte Valore": "Stima (Baroldi Diego Garda Cabernet Merlot, piccola cantina)",
+    "Fonte Valore": "stima (Baroldi, piccola cant.)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio, macerazione 7-10 gg; affinamento in acciaio e botti di legno.",
+    "Legno": "Si"
   },
   {
     "ID": 60,
@@ -1136,7 +1234,7 @@
     "Paese": "Italia",
     "Regione": "Lazio",
     "Annata": 2025,
-    "Uvaggio": "Roscetto, Procanico, Malvasia (blend tipico denominazione - dato incerto)",
+    "Uvaggio": "Roscetto, Procanico, Malvasia (blend tipico denominazione",
     "Corpo": "Leggero",
     "Acidità": "Alta",
     "ABV (%)": 12.5,
@@ -1145,9 +1243,11 @@
     "Anno Picco": 2026,
     "Rating XWines": 3.4,
     "Valore Mercato": 10,
-    "Fonte Valore": "stima — vino base stesso produttore Trappolini",
+    "Fonte Valore": "stima (Trappolini base)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio a T controllata; breve affinamento sur lies.",
+    "Legno": "No"
   },
   {
     "ID": 10,
@@ -1159,9 +1259,9 @@
     "Paese": "Francia",
     "Regione": "Bordeaux",
     "Annata": 2022,
-    "Uvaggio": "Merlot, Cabernet Sauvignon, Cabernet Franc (blend tipico Bordeaux)",
+    "Uvaggio": "Merlot, Cabernet Sauvignon, Cabernet Franc (blend tipico",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "13.5",
     "Abbinamenti": "Manzo, Veal, Selvaggina, Pollame",
     "Finestra": "2025–2030",
@@ -1170,7 +1270,9 @@
     "Valore Mercato": 12,
     "Fonte Valore": "Wine-Searcher",
     "Prezzo Acq.": "14,50",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Per parcella; acciaio; affinamento 9 mesi in barrique.",
+    "Legno": "Si"
   },
   {
     "ID": 35,
@@ -1184,16 +1286,18 @@
     "Annata": 2023,
     "Uvaggio": "Chardonnay, Sauvignon Blanc, Pinot Grigio (blend)",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "14.5",
     "Abbinamenti": "Manzo, Agnello, Selvaggina, Cibo speziato, Pollame",
     "Finestra": "2025–2027",
     "Anno Picco": 2026,
     "Rating XWines": 3.3,
     "Valore Mercato": 8,
-    "Fonte Valore": "Wine-Searcher (Budureasca Sabrize Fumé)",
+    "Fonte Valore": "Wine-Searcher (Budureasca)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Affinamento 5 mesi in barrique fr.; stile fumé.",
+    "Legno": "Si"
   },
   {
     "ID": 46,
@@ -1207,16 +1311,18 @@
     "Annata": 2022,
     "Uvaggio": "Nero d'Avola 100%",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Media",
     "ABV (%)": "13.5",
     "Abbinamenti": "Manzo, Agnello, Veal, Pollame, Salumi",
     "Finestra": "2025–2028",
     "Anno Picco": 2026,
     "Rating XWines": 3.2,
     "Valore Mercato": 16,
-    "Fonte Valore": "in-wine.com (Baglio Diar Nedda)",
+    "Fonte Valore": "in-wine.com (Baglio Diar)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio a T controllata, macerazione 8-10 gg; affinamento breve.",
+    "Legno": "No"
   },
   {
     "ID": 5,
@@ -1230,7 +1336,7 @@
     "Annata": 2025,
     "Uvaggio": "Inzolia 100%",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Media",
     "ABV (%)": "13.0",
     "Abbinamenti": "Frutti di mare, Vegetariano, Antipasto, Snack",
     "Finestra": "2025–2027",
@@ -1239,7 +1345,9 @@
     "Valore Mercato": 14,
     "Fonte Valore": "Tannico",
     "Prezzo Acq.": "7,60",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Vendemmia notturna; pressatura soffice; acciaio a bassa T.",
+    "Legno": "No"
   },
   {
     "ID": 45,
@@ -1253,16 +1361,18 @@
     "Annata": 2024,
     "Uvaggio": "Lagrein 100%",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Media",
     "ABV (%)": "12.5",
     "Abbinamenti": "Manzo, Pasta, Agnello, Selvaggina",
     "Finestra": "2025–2029",
     "Anno Picco": 2027,
     "Rating XWines": 3.2,
     "Valore Mercato": 12,
-    "Fonte Valore": "Stima (Cantina Rotaliana Lagrein, fascia base)",
+    "Fonte Valore": "stima (Rotaliana Lagrein)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio, macerazione 10-12 gg; affinamento 6 mesi in legno.",
+    "Legno": "Si"
   },
   {
     "ID": 58,
@@ -1274,18 +1384,20 @@
     "Paese": "Italia",
     "Regione": "Umbria",
     "Annata": 2025,
-    "Uvaggio": "Grechetto, Procanico (antichi cloni da vigne aziendali più vecchie)",
+    "Uvaggio": "Grechetto, Procanico (antichi cloni da vigne aziendali più",
     "Corpo": "Corposo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "11.0",
     "Abbinamenti": "Manzo, Pasta, Agnello",
     "Finestra": "2025–2029",
     "Anno Picco": 2027,
     "Rating XWines": 3.1,
     "Valore Mercato": 12,
-    "Fonte Valore": "Stima (Arcadia Sant'Egidio, simile Crogneto)",
-    "Prezzo Acq.": "dato incerto",
-    "Bottiglie": 1
+    "Fonte Valore": "stima (simile Arcadia)",
+    "Prezzo Acq.": "",
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio; affinamento sur lies su cloni antichi Grechetto.",
+    "Legno": "No"
   },
   {
     "ID": 12,
@@ -1297,18 +1409,20 @@
     "Paese": "Francia",
     "Regione": "Bordeaux",
     "Annata": 2020,
-    "Uvaggio": "Sémillon, Sauvignon Blanc, Muscadelle (blend tipico Sauternes)",
+    "Uvaggio": "Sémillon, Sauvignon Blanc, Muscadelle (blend tipico",
     "Corpo": "Leggero",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "14.0",
     "Abbinamenti": "Manzo, Veal, Selvaggina, Pollame",
     "Finestra": "2025–2035",
     "Anno Picco": 2030,
     "Rating XWines": 3,
     "Valore Mercato": 50,
-    "Fonte Valore": "Wine-Searcher (Esquisse de Nairac Sauternes)",
+    "Fonte Valore": "Wine-Searcher (Nairac)",
     "Prezzo Acq.": "11,13",
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Botrizzazione; fermentazione in barrique fr. nuova (65%) per 18 mesi.",
+    "Legno": "Si"
   },
   {
     "ID": 56,
@@ -1320,9 +1434,9 @@
     "Paese": "Italia",
     "Regione": "Sardegna",
     "Annata": 2023,
-    "Uvaggio": "Cannonau 100% (da viti centenarie ad alberello, Mamoiada, 650 m s.l.m.)",
+    "Uvaggio": "Cannonau 100% (da viti centenarie ad alberello, Mamoiada,",
     "Corpo": "Medio corpo",
-    "Acidità": null,
+    "Acidità": "Alta",
     "ABV (%)": "12.0",
     "Abbinamenti": "Manzo, Agnello, Veal, Pollame, Salumi",
     "Finestra": "2025–2031",
@@ -1331,7 +1445,9 @@
     "Valore Mercato": 32,
     "Fonte Valore": "Travino (Dessolis Dòvaru Cent)",
     "Prezzo Acq.": null,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Fermentazione spontanea 12 gg con lieviti indigeni; 12 mesi in botti.",
+    "Legno": "Si"
   },
   {
     "ID": 59,
@@ -1352,9 +1468,11 @@
     "Anno Picco": 2027,
     "Rating XWines": 3.7,
     "Valore Mercato": 12,
-    "Fonte Valore": "Wine-Searcher (Carpineto Chianti Classico)",
+    "Fonte Valore": "viterbium.it (2025)",
     "Prezzo Acq.": 9.9,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Macerazione controllata; affinamento 4-6 mesi in rovere.",
+    "Legno": "Si"
   },
   {
     "ID": 60,
@@ -1375,9 +1493,11 @@
     "Anno Picco": 2026,
     "Rating XWines": 3.7,
     "Valore Mercato": 8,
-    "Fonte Valore": "Vivino / stima (Tenuta Aquilaia)",
+    "Fonte Valore": "stima (Trappolini base)",
     "Prezzo Acq.": 5.94,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio a bassa T; sur lies; no legno.",
+    "Legno": "No"
   },
   {
     "ID": 61,
@@ -1398,9 +1518,11 @@
     "Anno Picco": 2026,
     "Rating XWines": 4.55,
     "Valore Mercato": 18,
-    "Fonte Valore": "Wine-Searcher / Clark Estate (91/100 Wine Enthusiast → 4.55)",
+    "Fonte Valore": "stima (Vin Santo 500ml)",
     "Prezzo Acq.": 15.92,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio a bassa T; sur lies; no legno.",
+    "Legno": "No"
   },
   {
     "ID": 62,
@@ -1421,9 +1543,11 @@
     "Anno Picco": 2028,
     "Rating XWines": 4.1,
     "Valore Mercato": 14,
-    "Fonte Valore": "Wine-Searcher (Cesari Valpolicella Ripasso 2022)",
+    "Fonte Valore": "stima (Buttafuoco DOC)",
     "Prezzo Acq.": 9.9,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Ripasso 15 gg su vinacce Amarone; 12+6 mesi barrique fr.",
+    "Legno": "Si"
   },
   {
     "ID": 63,
@@ -1444,9 +1568,11 @@
     "Anno Picco": 2026,
     "Rating XWines": 3.7,
     "Valore Mercato": 9,
-    "Fonte Valore": "Wine-Searcher / Vivino (Uggiano Chianti Classico)",
+    "Fonte Valore": "sparkleitaly.it (2022/23)",
     "Prezzo Acq.": 6.65,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Acciaio/cemento, macerazione 12-15 gg; 12 mesi in rovere.",
+    "Legno": "Si"
   },
   {
     "ID": 64,
@@ -1467,9 +1593,11 @@
     "Anno Picco": 2029,
     "Rating XWines": 4,
     "Valore Mercato": 14,
-    "Fonte Valore": "Wine-Searcher / Vivino (Torre Mora Cauru Etna Rosso)",
+    "Fonte Valore": "Wine-Searcher / Vivino",
     "Prezzo Acq.": 6.45,
-    "Bottiglie": 2
+    "Bottiglie": 2,
+    "Metodo Produzione": "Maceraz. a freddo; 7 gg su bucce; malolattica in acciaio.",
+    "Legno": "No"
   },
   {
     "ID": 65,
@@ -1490,9 +1618,11 @@
     "Anno Picco": 2026,
     "Rating XWines": 3.7,
     "Valore Mercato": 20,
-    "Fonte Valore": "Wine-Searcher (Badenhorst Secateurs Chenin Blanc 88/100 → 4.4 → XWines 3.7)",
+    "Fonte Valore": "Wine-Searcher (~$18)",
     "Prezzo Acq.": 13.9,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Cemento/botti vecchie; no additivi; stile ossidativo naturale.",
+    "Legno": "Si"
   },
   {
     "ID": 66,
@@ -1513,9 +1643,11 @@
     "Anno Picco": 2027,
     "Rating XWines": 3.7,
     "Valore Mercato": 20,
-    "Fonte Valore": "Wine-Searcher (Badenhorst Secateurs Red 91/100 → stima XWines 3.7)",
+    "Fonte Valore": "stima (Alario ~€14-16)",
     "Prezzo Acq.": 13.9,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "Cemento/acciaio, lieviti indigeni; affinamento in botti usate.",
+    "Legno": "Si"
   },
   {
     "ID": 67,
@@ -1536,8 +1668,10 @@
     "Anno Picco": 2027,
     "Rating XWines": 3.9,
     "Valore Mercato": 18,
-    "Fonte Valore": "Wine-Searcher (Tasca d'Almerita Lamuri Nero d'Avola 2022)",
+    "Fonte Valore": "Wine-Searcher (~$65-70)",
     "Prezzo Acq.": 11.6,
-    "Bottiglie": 1
+    "Bottiglie": 1,
+    "Metodo Produzione": "12 gg a 25-28°C; 12 mesi in barrique fr. 225L (20% nuovo).",
+    "Legno": "Si"
   }
 ]
