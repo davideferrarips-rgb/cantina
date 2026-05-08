@@ -312,9 +312,14 @@ body {
 .modal-header {
   background: var(--parchment);
   border-bottom: 2px solid var(--gold);
-  padding: 24px 28px 20px;
+  padding: 20px 28px 16px;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: start;
 }
+.modal-header-text { min-width: 0; }
 .modal-meta {
   font-family: 'Montserrat', sans-serif;
   font-size: 9px;
@@ -322,11 +327,11 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 .modal-wine-name {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 500;
   color: var(--dark);
   line-height: 1.15;
@@ -334,14 +339,14 @@ body {
 }
 .modal-producer {
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-style: italic;
   color: var(--muted);
 }
 .modal-close {
   position: absolute;
-  top: 16px;
-  right: 20px;
+  top: 12px;
+  right: 16px;
   background: transparent;
   border: none;
   font-size: 22px;
@@ -350,16 +355,37 @@ body {
   line-height: 1;
   padding: 4px;
   transition: color 0.15s;
+  z-index: 1;
 }
 .modal-close:hover { color: var(--dark); }
 
-.modal-body { padding: 24px 28px 28px; }
+.modal-bottle-img {
+  width: 80px;
+  height: 120px;
+  object-fit: contain;
+  object-position: center bottom;
+  display: block;
+  margin-top: 4px;
+  border-radius: 2px;
+  filter: drop-shadow(0 2px 6px rgba(26,20,16,0.18));
+}
+.modal-bottle-placeholder {
+  width: 80px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--border);
+  font-size: 36px;
+}
+
+.modal-body { padding: 18px 28px 24px; }
 
 .modal-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px 24px;
-  margin-bottom: 20px;
+  gap: 12px 24px;
+  margin-bottom: 16px;
 }
 .modal-field label {
   display: block;
@@ -381,6 +407,9 @@ body {
   font-weight: 600;
   color: var(--gold);
 }
+.modal-field.full-width {
+  grid-column: 1 / -1;
+}
 .stars { color: var(--gold); font-size: 14px; letter-spacing: 1px; }
 
 .abbinamenti-label {
@@ -395,7 +424,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .chip {
   font-family: 'Montserrat', sans-serif;
@@ -475,8 +504,13 @@ body {
     gap: 12px;
   }
   .wine-name { font-size: 15px; }
-  .modal-grid { grid-template-columns: 1fr; }
+  .modal-grid { grid-template-columns: 1fr 1fr; }
   .tab-btn { padding: 10px 16px; font-size: 10px; }
+  .modal-bottle-img { width: 64px; height: 96px; }
+  .modal-bottle-placeholder { width: 64px; height: 96px; font-size: 28px; }
+  .modal-body { padding: 14px 18px 20px; }
+  .modal-header { padding: 16px 18px 14px; }
+  .modal-wine-name { font-size: 22px; }
 }
 </style>
 </head>
@@ -516,9 +550,12 @@ body {
 <div class="modal-backdrop" id="modal-backdrop">
   <div class="modal" id="modal">
     <div class="modal-header">
-      <div class="modal-meta" id="modal-meta"></div>
-      <div class="modal-wine-name" id="modal-wine-name"></div>
-      <div class="modal-producer" id="modal-producer"></div>
+      <div class="modal-header-text">
+        <div class="modal-meta" id="modal-meta"></div>
+        <div class="modal-wine-name" id="modal-wine-name"></div>
+        <div class="modal-producer" id="modal-producer"></div>
+      </div>
+      <div id="modal-bottle"></div>
       <button class="modal-close" id="modal-close">×</button>
     </div>
     <div class="modal-body" id="modal-body"></div>
@@ -562,7 +599,10 @@ async function loadWines() {
         // Il nuovo JSON ha un numero puro, lo formattiamo in euro
         valore_mercato: w["Valore Mercato"] ? "€ " + parseFloat(String(w["Valore Mercato"]).replace(',', '.')).toFixed(2).replace('.', ',') : "—",
         bottiglie: w["Bottiglie"] || 1,
-        note: w["Note"] || ""
+        note: w["Note"] || "",
+        img: w["img"] || null,
+        metodo_produzione: w["Metodo Produzione"] || null,
+        legno: w["Legno"] || null
       };
     });
     
@@ -750,25 +790,34 @@ function openModal(w) {
   document.getElementById('modal-wine-name').textContent = w.nome;
   document.getElementById('modal-producer').textContent = w.produttore;
 
+  // Immagine bottiglia
+  const bottleEl = document.getElementById('modal-bottle');
+  if (w.img) {
+    bottleEl.innerHTML = '<img class="modal-bottle-img" src="' + escHtml(w.img) + '" alt="' + escHtml(w.nome) + '" onerror="this.parentElement.innerHTML=\'<div class=\\"modal-bottle-placeholder\\">🍾</div>\'">';
+  } else {
+    bottleEl.innerHTML = '<div class="modal-bottle-placeholder">🍾</div>';
+  }
+
   const body = document.getElementById('modal-body');
 
+  // Campi in griglia a due colonne
   const fields = [
-    ['Valore di mercato', '<span class="value-gold">' + escHtml(w.valore_mercato) + '</span>'],
-    ['Rating XWines', starsHtml(w.rating_xwines)],
-    ['Annata', formatAnnata(w)],
-    ['Denominazione', escHtml(w.denominazione) || '—'],
-    ['Uvaggio', escHtml(w.uvaggio) || '—'],
-    ['ABV', w.abv ? w.abv + '%' : '—'],
-    ['Corpo', escHtml(w.corpo) || '—'],
-    ['Acidità', escHtml(w.acidita) || '—'],
-    ['Finestra consumo', escHtml(w.finestra_consumo) || '—'],
-    ['Anno picco', w.anno_picco ? w.anno_picco : '—'],
-    ['Bottiglie', w.bottiglie || 1],
+    ['Valore di mercato', '<span class="value-gold">' + escHtml(w.valore_mercato) + '</span>', false],
+    ['Rating XWines', starsHtml(w.rating_xwines), false],
+    ['Annata', formatAnnata(w), false],
+    ['ABV', w.abv ? w.abv + '%' : '—', false],
+    ['Corpo', escHtml(w.corpo) || '—', false],
+    ['Acidità', escHtml(w.acidita) || '—', false],
+    ['Finestra consumo', escHtml(w.finestra_consumo) || '—', false],
+    ['Anno picco', w.anno_picco ? w.anno_picco : '—', false],
+    ['Uvaggio', escHtml(w.uvaggio) || '—', true],
+    ['Metodo produzione', escHtml(w.metodo_produzione) || '—', true],
+    ['Legno', w.legno ? (w.legno === 'Si' ? '✔ Sì' : '✘ No') : '—', false],
   ];
 
   let html = '<div class="modal-grid">';
-  fields.forEach(([label, val]) => {
-    html += '<div class="modal-field"><label>' + label + '</label><span>' + val + '</span></div>';
+  fields.forEach(([label, val, fullWidth]) => {
+    html += '<div class="modal-field' + (fullWidth ? ' full-width' : '') + '"><label>' + label + '</label><span>' + val + '</span></div>';
   });
   html += '</div>';
 
