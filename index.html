@@ -793,9 +793,9 @@ function openModal(w) {
   // Immagine bottiglia
   const bottleEl = document.getElementById('modal-bottle');
   if (w.img) {
-    bottleEl.innerHTML = '<img class="modal-bottle-img" src="' + escHtml(w.img) + '" alt="' + escHtml(w.nome) + '" onerror="this.parentElement.innerHTML=\'<div class=\\"modal-bottle-placeholder\\">🍾</div>\'">';
+    bottleEl.innerHTML = '<img class="modal-bottle-img" src="' + escHtml(w.img) + '" alt="' + escHtml(w.nome) + '" onerror="this.parentElement.innerHTML=\'\'"\'>';
   } else {
-    bottleEl.innerHTML = '<div class="modal-bottle-placeholder">🍾</div>';
+    bottleEl.innerHTML = '';
   }
 
   const body = document.getElementById('modal-body');
@@ -812,7 +812,6 @@ function openModal(w) {
     ['Anno picco', w.anno_picco ? w.anno_picco : '—', false],
     ['Uvaggio', escHtml(w.uvaggio) || '—', true],
     ['Metodo produzione', escHtml(w.metodo_produzione) || '—', true],
-    ['Legno', w.legno ? (w.legno === 'Si' ? '✔ Sì' : '✘ No') : '—', false],
   ];
 
   let html = '<div class="modal-grid">';
