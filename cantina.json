@@ -22,7 +22,8 @@
     "Prezzo Acq.": "13,65",
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio, affinamento 10-12 mesi in barrique e botti grandi.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/c5og-yCURZWaeXfq1TzOJg_pb_x600.png"
   },
   {
     "ID": 53,
@@ -47,7 +48,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Tini, macerazione 20-25 gg; affinamento 26+ mesi in botti grandi.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/Mx1XwIhtSye4cwsmm8_crg_pb_x600.png"
   },
   {
     "ID": 32,
@@ -72,7 +74,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio a T controllata; affinamento sur lies 6 mesi.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/GLOBHWGQQvi5InBjDLFV3Q_pb_x600.png"
   },
   {
     "ID": 52,
@@ -97,7 +100,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Lunga macerazione in acciaio; lungo affinamento in botti di rovere.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/xHAnF_-pTAaEQ03Jpf_Tig_pb_x600.png"
   },
   {
     "ID": 69,
@@ -122,7 +126,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Tini di rovere; affinamento 36 mesi in grandi botti, poi bottiglia.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": null
   },
   {
     "ID": 7,
@@ -147,7 +152,8 @@
     "Prezzo Acq.": "12,90",
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio/cemento, macerazione 15-20 gg; affinamento 24 mesi in legno.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/yvPlrQP7QTKpNNgjO37ChQ_pb_x600.png"
   },
   {
     "ID": 6,
@@ -172,7 +178,8 @@
     "Prezzo Acq.": "7,60",
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio a T controllata, breve macerazione; affinamento in barrique.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/wNQqgptZTQu6vrX0DjW9mQ_pb_x600.png"
   },
   {
     "ID": 27,
@@ -197,7 +204,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Met. Classico: 35%+ in barrique >35 anni; lunga sosta sui lieviti.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/qTvvfud7R3SQ4dVBPPDiow_pb_x600.png"
   },
   {
     "ID": 18,
@@ -222,7 +230,8 @@
     "Prezzo Acq.": "5,45",
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio, breve affinamento in acciaio; stile fresco da bere giovane.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/WScb2-9rS4uHvIiCefwo7w_pb_x600.png"
   },
   {
     "ID": 20,
@@ -247,7 +256,8 @@
     "Prezzo Acq.": "13,50",
     "Bottiglie": 1,
     "Metodo Produzione": "Macerazione 10 gg; 18 mesi in botti grandi Slavonia 80 hl.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/gUlWp2ilTB-1Dguc4Bjr3Q_pb_x600.png"
   },
   {
     "ID": 51,
@@ -272,7 +282,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 2,
     "Metodo Produzione": "Macerazione tradizionale; affinamento in cemento vetrificato.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/vbIuX7h1TP-oA2ZcDiHYzw_pb_x600.png"
   },
   {
     "ID": 16,
@@ -297,7 +308,8 @@
     "Prezzo Acq.": "6,25",
     "Bottiglie": 1,
     "Metodo Produzione": "Pressatura soffice; fermentazione 16 gg; affinamento 3 mesi sur lies.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/58_RMaRKR7G9qycaB0_ufg_pb_x600.png"
   },
   {
     "ID": 67,
@@ -322,7 +334,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio; affinamento in botti rovere Slavonia e castagno.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/FuiVIoCRS4WO4vH3DrYtFg_pb_x600.png"
   },
   {
     "ID": 68,
@@ -347,7 +360,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio a T controllata, macerazione breve 5-7 gg; affinamento acciaio.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/cgaiMRESRy2S0XzreJ1raA_pb_x600.png"
   },
   {
     "ID": 55,
@@ -372,7 +386,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio, macerazione 15-18 gg; affinamento parziale in legno.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/7tdldLwASOCN9YlgmlEU2A_pb_x600.png"
   },
   {
     "ID": 17,
@@ -397,7 +412,8 @@
     "Prezzo Acq.": "9,90",
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio; affinamento 12 mesi in rovere per Sangiovese e Sagrantino.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/5dJZWzFkSRiWD6fMDWftTQ_pb_x600.png"
   },
   {
     "ID": 14,
@@ -422,7 +438,8 @@
     "Prezzo Acq.": "11,94",
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio inox, malolattica parziale; affinamento sur lies in acciaio.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/yUcXo1NKSp-A0yjB9BP4lg_pb_x600.png"
   },
   {
     "ID": 33,
@@ -447,7 +464,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio a bassa T, sur lies; no legno, stile fresco e aromatico.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/GLOBHWGQQvi5InBjDLFV3Q_pb_x600.png"
   },
   {
     "ID": 44,
@@ -472,7 +490,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio, macerazione 15-20 gg; affinamento 18-24 mesi in botti grandi.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/i5k4NFqyRxCbPbRQhrPklw_pb_x600.png"
   },
   {
     "ID": 2,
@@ -497,7 +516,8 @@
     "Prezzo Acq.": "9,00",
     "Bottiglie": 1,
     "Metodo Produzione": "Cemento/acciaio, macerazione 10-15 gg; affinamento 8-10 mesi in legno.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/fen70JdlToC9_2it37LPBw_pb_x600.png"
   },
   {
     "ID": 19,
@@ -522,7 +542,8 @@
     "Prezzo Acq.": "8,90",
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio, macerazione 10-12 gg; affinamento 12 mesi in barrique.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/Wf7zdoVURsiwWw0VA0rxqA_pb_x600.png"
   },
   {
     "ID": 50,
@@ -547,7 +568,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Macerazione 20 gg; affinamento 12 mesi in cemento vetrificato.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/f4YaLfscSWuyosMoKc21oQ_pb_x600.png"
   },
   {
     "ID": 4,
@@ -572,7 +594,8 @@
     "Prezzo Acq.": "4,74",
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio a bassa T; breve affinamento in acciaio, stile fresco.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/EFGisyh4ScqBXdqFhc580g_pb_x600.png"
   },
   {
     "ID": 59,
@@ -597,7 +620,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio a T controllata; affinamento sur lies in acciaio.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/SjjTyayTS0y2SX719T_F0A_pb_x600.png"
   },
   {
     "ID": 30,
@@ -622,7 +646,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Met. Classico: acciaio + barrique; affinamento sui lieviti 4+ anni.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/NWXm1bZiTcWC4jAObvUHXQ_pb_x600.png"
   },
   {
     "ID": 21,
@@ -647,7 +672,8 @@
     "Prezzo Acq.": "6,45",
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio a T controllata; affinamento sur lies 4-5 mesi in acciaio.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/EHu_pzR7RheV--NJnayCJQ_pb_x600.png"
   },
   {
     "ID": 48,
@@ -672,7 +698,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Macerazione tradizionale; affinamento in cemento vetrificato.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/biHtPc7fRdeSeU_klf2dLA_pb_x600.png"
   },
   {
     "ID": 49,
@@ -697,7 +724,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Macerazione tradizionale; affinamento in cemento vetrificato.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/biHtPc7fRdeSeU_klf2dLA_pb_x600.png"
   },
   {
     "ID": 38,
@@ -722,7 +750,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Pressatura soffice; acciaio a bassa T; affinamento sur lies.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/dCFDCBH2R06MvY0FvO9W2Q_pb_x600.png"
   },
   {
     "ID": 62,
@@ -747,7 +776,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Macerazione 10-15 gg in rosso; affinamento 12 mesi in legno.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/UZiBE_XCTRKMnN41JS0mBA_pb_x600.png"
   },
   {
     "ID": 65,
@@ -772,7 +802,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio, macerazione 8-10 gg; affinamento 8-10 mesi in botti.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/g6pu7f0hQveNsLLlw41Lpg_pb_x600.png"
   },
   {
     "ID": 66,
@@ -797,7 +828,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio, macerazione 7-8 gg; breve affinamento in botti grandi.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/g6pu7f0hQveNsLLlw41Lpg_pb_x600.png"
   },
   {
     "ID": 71,
@@ -822,7 +854,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Macerazione tradizionale; affinamento in cemento vetrificato.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/Mcd6NzJ1TS-iYhyZ5fUu2g_pb_x600.png"
   },
   {
     "ID": 28,
@@ -847,7 +880,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Met. Classico: acciaio, presa di spuma, affinamento sui lieviti.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/tx_BsH83TFWdyRrx1UyT2A_pb_x600.png"
   },
   {
     "ID": 8,
@@ -872,7 +906,8 @@
     "Prezzo Acq.": "15,00",
     "Bottiglie": 1,
     "Metodo Produzione": "Macerazione 15 gg, malolattica spontanea; 18 mesi in botti fr. di rovere.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/70KM3z7yTBa-hfM_2lPzQQ_pb_x600.png"
   },
   {
     "ID": 9,
@@ -897,7 +932,8 @@
     "Prezzo Acq.": "9,90",
     "Bottiglie": 1,
     "Metodo Produzione": "Macerazione 12-15 gg a 25-28°C; 80% botti grandi Slavonia + 20% barrique fr.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/ergDqj6pSM6g7PK6aLvidw_pb_x600.png"
   },
   {
     "ID": 1,
@@ -922,7 +958,8 @@
     "Prezzo Acq.": "12,90",
     "Bottiglie": 1,
     "Metodo Produzione": "Pressatura soffice; acciaio a bassa T; affinamento sur lies.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/tBzr9Vh-R6OMuPbdIhbp_A_pb_x600.png"
   },
   {
     "ID": 25,
@@ -947,7 +984,8 @@
     "Prezzo Acq.": "11,50",
     "Bottiglie": 1,
     "Metodo Produzione": "Met. Tradizionale: 2a fermentazione in bottiglia, min. 18 mesi lieviti.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/ZB3STNZRTAubrT8EWJ2itQ_pb_x600.png"
   },
   {
     "ID": 22,
@@ -972,7 +1010,8 @@
     "Prezzo Acq.": "7,74",
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio a bassa T; affinamento sur lies in acciaio.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/tIGP5VPsTgmC5niE_6Ua5Q_pb_x600.png"
   },
   {
     "ID": 41,
@@ -997,7 +1036,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio a T controllata, malolattica in acciaio; maturazione in botti di legno.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/2a366Rw_TmmF52Y_zCUqPA_pb_x600.png"
   },
   {
     "ID": 61,
@@ -1022,7 +1062,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Appassimento su stuoie; lenta fermentazione in caratelli.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/x6N6MStvSceDOWXXsQTSzw_pb_x600.png"
   },
   {
     "ID": 31,
@@ -1047,7 +1088,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Met. Classico Trentodoc: Chardonnay 100%; presa di spuma in bottiglia.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/kGWiUZelSW2eD9sfQIMaMQ_pb_x600.png"
   },
   {
     "ID": 15,
@@ -1072,7 +1114,8 @@
     "Prezzo Acq.": "12,90",
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio, macerazione 20-25 gg; affinamento 26+ mesi in legno.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/FIfq7guzRgCO68daXLQy4g_pb_x600.png"
   },
   {
     "ID": 11,
@@ -1097,7 +1140,8 @@
     "Prezzo Acq.": "11,90",
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio a bassa T; affinamento sur lies; no legno.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/rqksp9sfQh2cJgkgh3wasA_pb_x600.png"
   },
   {
     "ID": 63,
@@ -1122,7 +1166,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Pressatura soffice; acciaio a bassa T; affinamento sur lies.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/nZy_mDA5SG-Cuu2VkwSrPg_pb_x600.png"
   },
   {
     "ID": 64,
@@ -1147,7 +1192,8 @@
     "Prezzo Acq.": "11,99",
     "Bottiglie": 1,
     "Metodo Produzione": "Pressatura soffice; acciaio a bassa T; breve sur lies.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/AwjOAYHwQfSa6fSEzD7y3Q_pb_x600.png"
   },
   {
     "ID": 70,
@@ -1172,7 +1218,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Macerazione 2 sett. a 24-28°C; affinamento 7 mesi in barrique.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/PS-Dkz3kT0yv614R24ip5A_pb_x600.png"
   },
   {
     "ID": 29,
@@ -1197,7 +1244,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Met. Classico: 3 vitigni vinif. separati in acciaio; 20-25% vini riserva.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/jdtbxkkxSkO8mgNX4WxsVQ_pb_x600.png"
   },
   {
     "ID": 54,
@@ -1222,7 +1270,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio, macerazione 7-10 gg; affinamento in acciaio e botti di legno.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": null
   },
   {
     "ID": 60,
@@ -1247,7 +1296,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio a T controllata; breve affinamento sur lies.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/SjjTyayTS0y2SX719T_F0A_pb_x600.png"
   },
   {
     "ID": 10,
@@ -1272,7 +1322,8 @@
     "Prezzo Acq.": "14,50",
     "Bottiglie": 1,
     "Metodo Produzione": "Per parcella; acciaio; affinamento 9 mesi in barrique.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/1rLaVBP6Q0OT8HbbDa2aCQ_pb_x600.png"
   },
   {
     "ID": 35,
@@ -1297,7 +1348,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Affinamento 5 mesi in barrique fr.; stile fumé.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/iKJIt7WVRoOcnvtcHDRYdw_pb_x600.png"
   },
   {
     "ID": 46,
@@ -1322,7 +1374,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio a T controllata, macerazione 8-10 gg; affinamento breve.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/PjKHp65WRR66ZPJECVtHcQ_pb_x600.png"
   },
   {
     "ID": 5,
@@ -1347,7 +1400,8 @@
     "Prezzo Acq.": "7,60",
     "Bottiglie": 1,
     "Metodo Produzione": "Vendemmia notturna; pressatura soffice; acciaio a bassa T.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/wNQqgptZTQu6vrX0DjW9mQ_pb_x600.png"
   },
   {
     "ID": 45,
@@ -1372,7 +1426,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio, macerazione 10-12 gg; affinamento 6 mesi in legno.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/Rje5JJEiT-KZyIZ1oagL8A_pb_x600.png"
   },
   {
     "ID": 58,
@@ -1397,7 +1452,8 @@
     "Prezzo Acq.": "",
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio; affinamento sur lies su cloni antichi Grechetto.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/jo9dc93sQcCK9_4i8PmgsA_pb_x600.png"
   },
   {
     "ID": 12,
@@ -1422,7 +1478,8 @@
     "Prezzo Acq.": "11,13",
     "Bottiglie": 1,
     "Metodo Produzione": "Botrizzazione; fermentazione in barrique fr. nuova (65%) per 18 mesi.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/YHvd8LsBRpKVEc0YBTsfGA_pb_x600.png"
   },
   {
     "ID": 56,
@@ -1447,7 +1504,8 @@
     "Prezzo Acq.": null,
     "Bottiglie": 1,
     "Metodo Produzione": "Fermentazione spontanea 12 gg con lieviti indigeni; 12 mesi in botti.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": null
   },
   {
     "ID": 59,
@@ -1472,7 +1530,8 @@
     "Prezzo Acq.": 9.9,
     "Bottiglie": 1,
     "Metodo Produzione": "Macerazione controllata; affinamento 4-6 mesi in rovere.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/R1PGtsM9RUy3cy_C5dpJmw_pb_x600.png"
   },
   {
     "ID": 60,
@@ -1497,7 +1556,8 @@
     "Prezzo Acq.": 5.94,
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio a bassa T; sur lies; no legno.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/3R1oEpmnTRiEk7L8BssODQ_pb_x600.png"
   },
   {
     "ID": 61,
@@ -1522,7 +1582,8 @@
     "Prezzo Acq.": 15.92,
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio a bassa T; sur lies; no legno.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": null
   },
   {
     "ID": 62,
@@ -1547,7 +1608,8 @@
     "Prezzo Acq.": 9.9,
     "Bottiglie": 1,
     "Metodo Produzione": "Ripasso 15 gg su vinacce Amarone; 12+6 mesi barrique fr.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/_aWtocS3S7mwCduVeCbNUw_pb_x600.png"
   },
   {
     "ID": 63,
@@ -1572,7 +1634,8 @@
     "Prezzo Acq.": 6.65,
     "Bottiglie": 1,
     "Metodo Produzione": "Acciaio/cemento, macerazione 12-15 gg; 12 mesi in rovere.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/SFUyoJh2RXyxg0ELUYCQyA_pb_x600.png"
   },
   {
     "ID": 64,
@@ -1597,7 +1660,8 @@
     "Prezzo Acq.": 6.45,
     "Bottiglie": 2,
     "Metodo Produzione": "Maceraz. a freddo; 7 gg su bucce; malolattica in acciaio.",
-    "Legno": "No"
+    "Legno": "No",
+    "img": "https://images.vivino.com/thumbs/zMQiYB7PSYGYSpNzrlejeQ_pb_x600.png"
   },
   {
     "ID": 65,
@@ -1622,7 +1686,8 @@
     "Prezzo Acq.": 13.9,
     "Bottiglie": 1,
     "Metodo Produzione": "Cemento/botti vecchie; no additivi; stile ossidativo naturale.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/D_0-FHmsTmWVjkw5YF1NBA_pb_x600.png"
   },
   {
     "ID": 66,
@@ -1647,7 +1712,8 @@
     "Prezzo Acq.": 13.9,
     "Bottiglie": 1,
     "Metodo Produzione": "Cemento/acciaio, lieviti indigeni; affinamento in botti usate.",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/Uu6GPSqNQUKxnjv5Qv8VoQ_pb_x600.png"
   },
   {
     "ID": 67,
@@ -1672,6 +1738,7 @@
     "Prezzo Acq.": 11.6,
     "Bottiglie": 1,
     "Metodo Produzione": "12 gg a 25-28°C; 12 mesi in barrique fr. 225L (20% nuovo).",
-    "Legno": "Si"
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/8BgvZFRWSUiTsLX02U2ouA_pb_x600.png"
   }
 ]
