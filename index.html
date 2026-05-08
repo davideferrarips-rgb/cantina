@@ -590,7 +590,7 @@ async function loadWines() {
         annata: w["Annata"],
         uvaggio: w["Uvaggio"],
         corpo: w["Corpo"],
-        acidita: w["Acidita"],
+        acidita: w["Acidità"],
         abv: w["ABV (%)"],
         // Gli abbinamenti nel nuovo JSON sono una stringa separata da virgole
         abbinamenti: Array.isArray(w["Abbinamenti"]) ? w["Abbinamenti"] : (w["Abbinamenti"] ? String(w["Abbinamenti"]).split(',').map(s => s.trim()) : []),
