@@ -1740,5 +1740,31 @@
     "Metodo Produzione": "12 gg a 25-28°C; 12 mesi in barrique fr. 225L (20% nuovo).",
     "Legno": "Si",
     "img": "https://images.services.esselunga.it/html/img_prodotti/esselunga/enoteca-big/551511.png"
+  },
+  {
+    "ID": 81,
+    "Nome": "Duque de Braganca 20 Years Old Tawny Port",
+    "Produttore": "Porto Ferreira",
+    "Tipologia": "Altro",
+    "Metodo": "Fortified",
+    "Denominazione": "Porto DOC",
+    "Paese": "Portogallo",
+    "Regione": "Douro",
+    "Annata": 1992,
+    "Uvaggio": "Touriga Nacional, Touriga Franca, Tinta Roriz, Tinto Cao, Tinta Barroca, Tinta Amarela",
+    "Corpo": "Molto corposo",
+    "Acidità": "Alta",
+    "ABV (%)": 20.0,
+    "Abbinamenti": "Manzo, Formaggi stagionati, Formaggi duri",
+    "Finestra": "2026–2035",
+    "Anno Picco": 1998,
+    "Rating XWines": 4.3,
+    "Valore Mercato": 65.0,
+    "Fonte Valore": "Wine-Searcher ($45-73)",
+    "Prezzo Acq.": null,
+    "Bottiglie": 1,
+    "Metodo Produzione": "Porto tawny 20 anni; ossidazione controllata in botti piccole; imbottigliato 1992.",
+    "Legno": "Si",
+    "img": "https://images.vivino.com/thumbs/rcOYTLGeTyGqs1jtYuHGWA_pb_x600.png"
   }
 ]
