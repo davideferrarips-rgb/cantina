@@ -286,7 +286,7 @@
     "Bottiglie": 2,
     "Metodo Produzione": "Macerazione tradizionale; affinamento in cemento vetrificato.",
     "Legno": "No",
-    "img": "https://images.vivino.com/thumbs/vbIuX7h1TP-oA2ZcDiHYzw_pb_x600.png"
+    "img": "https://www.tenutadimorzano.it/images/Tuscany_Wine_Chianti_Morzano_Riserva_di_Morzano.png"
   },
   {
     "ID": 16,
@@ -573,7 +573,7 @@
     "Bottiglie": 1,
     "Metodo Produzione": "Macerazione 20 gg; affinamento 12 mesi in cemento vetrificato.",
     "Legno": "No",
-    "img": "https://images.vivino.com/thumbs/f4YaLfscSWuyosMoKc21oQ_pb_x600.png"
+    "img": "https://www.tenutadimorzano.it/images/Tuscany_Wine_Emilio_Tenuta_di_Morzano.png"
   },
   {
     "ID": 4,
@@ -680,58 +680,6 @@
     "img": "https://images.services.esselunga.it/html/img_prodotti/esselunga/enoteca-big/547265.png"
   },
   {
-    "ID": 48,
-    "Nome": "Chianti Montespertoli Riserva",
-    "Produttore": "Tenuta di Morzano",
-    "Tipologia": "Rosso",
-    "Metodo": "fermo",
-    "Denominazione": "Chianti Montespertoli Riserva DOCG",
-    "Paese": "Italia",
-    "Regione": "Toscana",
-    "Annata": 2020,
-    "Uvaggio": "Sangiovese ~80%, Merlot, Cabernet Sauvignon (tipico Chianti)",
-    "Corpo": "Medio corpo",
-    "Acidità": "Alta",
-    "ABV (%)": 14.0,
-    "Abbinamenti": "Manzo, Veal, Pollame",
-    "Finestra": "2025–2031",
-    "Anno Picco": 2028,
-    "Rating XWines": 3.7,
-    "Valore Mercato": 15.0,
-    "Fonte Valore": "stima (Morzano Riserva)",
-    "Prezzo Acq.": null,
-    "Bottiglie": 1,
-    "Metodo Produzione": "Macerazione tradizionale; affinamento in cemento vetrificato.",
-    "Legno": "No",
-    "img": "https://images.vivino.com/thumbs/biHtPc7fRdeSeU_klf2dLA_pb_x600.png"
-  },
-  {
-    "ID": 49,
-    "Nome": "Chianti Montespertoli Riserva",
-    "Produttore": "Tenuta di Morzano",
-    "Tipologia": "Rosso",
-    "Metodo": "fermo",
-    "Denominazione": "Chianti Montespertoli Riserva DOCG",
-    "Paese": "Italia",
-    "Regione": "Toscana",
-    "Annata": 2018,
-    "Uvaggio": "Sangiovese ~80%, Merlot, Cabernet Sauvignon (tipico Chianti)",
-    "Corpo": "Medio corpo",
-    "Acidità": "Alta",
-    "ABV (%)": 14.0,
-    "Abbinamenti": "Manzo, Veal, Pollame",
-    "Finestra": "2025–2028",
-    "Anno Picco": 2026,
-    "Rating XWines": 3.7,
-    "Valore Mercato": 15.0,
-    "Fonte Valore": "stima (Morzano Riserva)",
-    "Prezzo Acq.": null,
-    "Bottiglie": 1,
-    "Metodo Produzione": "Macerazione tradizionale; affinamento in cemento vetrificato.",
-    "Legno": "No",
-    "img": "https://images.vivino.com/thumbs/biHtPc7fRdeSeU_klf2dLA_pb_x600.png"
-  },
-  {
     "ID": 38,
     "Nome": "Chardonnay",
     "Produttore": "Kellerei Kaltern / Cantina di Caldaro",
@@ -834,7 +782,7 @@
     "Bottiglie": 1,
     "Metodo Produzione": "Appassimento su stuoie; lenta fermentazione in caratelli.",
     "Legno": "Si",
-    "img": "https://images.vivino.com/thumbs/x6N6MStvSceDOWXXsQTSzw_pb_x600.png"
+    "img": "https://www.tenutadimorzano.it/images/Tuscany_Wine_Vin_Santo_del_Chianti_Tenuta_di_Morzano.png"
   },
   {
     "ID": 71,
@@ -860,7 +808,7 @@
     "Bottiglie": 1,
     "Metodo Produzione": "Macerazione tradizionale; affinamento in cemento vetrificato.",
     "Legno": "No",
-    "img": "https://images.vivino.com/thumbs/Mcd6NzJ1TS-iYhyZ5fUu2g_pb_x600.png"
+    "img": "https://www.tenutadimorzano.it/images/Tuscany_Wine_il_Quarto_Tenuta_di_Morzano.png"
   },
   {
     "ID": 28,
