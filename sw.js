@@ -1,8 +1,9 @@
 // Service Worker — La Mia Cantina PWA
-const CACHE_NAME = 'cantina-v9';
-const DATA_CACHE = 'cantina-data-v1';
+// IMPORTANTE: incrementare CACHE_VERSION ad ogni modifica per forzare l'aggiornamento
+const CACHE_VERSION = 10;
+const CACHE_NAME = 'cantina-v' + CACHE_VERSION;
 
-// Risorse statiche da pre-cachare
+// Risorse statiche da pre-cachare (NO cantina.json — viene sempre preso dalla rete)
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -11,7 +12,7 @@ const STATIC_ASSETS = [
   './icons/icon-512.png'
 ];
 
-// Install: pre-cache risorse statiche
+// Install: pre-cache risorse statiche, skip waiting per attivarsi subito
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
@@ -20,30 +21,50 @@ self.addEventListener('install', event => {
   );
 });
 
-// Activate: pulisci cache vecchie
+// Activate: ELIMINA TUTTE le cache vecchie (sia statiche che dati)
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys =>
       Promise.all(
         keys
-          .filter(key => key !== CACHE_NAME && key !== DATA_CACHE)
+          .filter(key => key !== CACHE_NAME) // elimina TUTTO tranne la cache corrente
           .map(key => caches.delete(key))
       )
     ).then(() => self.clients.claim())
   );
 });
 
-// Fetch: strategia Network-First per i dati, Cache-First per il resto
+// Fetch handler
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
 
-  // cantina.json → Network-First (dati freschi prioritari)
+  // cantina.json → SEMPRE dalla rete, MAI dalla cache
+  // Questo garantisce che i dati siano sempre aggiornati
   if (url.pathname.endsWith('cantina.json')) {
     event.respondWith(
-      fetch(event.request)
+      fetch(event.request, { cache: 'no-store' })
+        .then(response => {
+          if (!response.ok) throw new Error('Network response not ok');
+          return response;
+        })
+        .catch(err => {
+          console.warn('Fetch cantina.json fallito, nessun fallback cache:', err);
+          return new Response(JSON.stringify({ cantina: [] }), {
+            status: 503,
+            headers: { 'Content-Type': 'application/json' }
+          });
+        })
+    );
+    return;
+  }
+
+  // index.html → Network-First (per ricevere subito aggiornamenti del codice)
+  if (url.pathname.endsWith('/') || url.pathname.endsWith('index.html')) {
+    event.respondWith(
+      fetch(event.request, { cache: 'no-store' })
         .then(response => {
           const clone = response.clone();
-          caches.open(DATA_CACHE).then(cache => cache.put(event.request, clone));
+          caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
           return response;
         })
         .catch(() => caches.match(event.request))
@@ -51,15 +72,17 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // Risorse statiche → Cache-First
-  if (event.request.method === 'GET' && url.origin === self.location.origin) {
+  // Tutto il resto (CSS, fonts, icons, etc.) → Cache-First con fallback rete
+  if (event.request.method === 'GET') {
     event.respondWith(
       caches.match(event.request)
         .then(cached => {
           if (cached) return cached;
           return fetch(event.request).then(response => {
-            const clone = response.clone();
-            caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+            if (response.ok) {
+              const clone = response.clone();
+              caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+            }
             return response;
           });
         })
@@ -67,16 +90,6 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // Tutto il resto (fonts Google, etc.) → Network con fallback cache
-  event.respondWith(
-    fetch(event.request)
-      .then(response => {
-        if (response.ok && event.request.method === 'GET') {
-          const clone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
-        }
-        return response;
-      })
-      .catch(() => caches.match(event.request))
-  );
+  // Fallback per tutto il resto
+  event.respondWith(fetch(event.request));
 });

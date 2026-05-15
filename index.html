@@ -569,10 +569,16 @@ let WINES = [];
 
 async function loadWines() {
   try {
-    // Aggiunto parametro t per bypassare la cache HTTP del browser e forzare il network
-    const response = await fetch('cantina.json?t=' + new Date().getTime());
+    // Fetch diretto — il Service Worker gestisce la strategia network-only con cache:'no-store'
+    const response = await fetch('cantina.json', { cache: 'no-store' });
+    if (!response.ok) throw new Error('HTTP ' + response.status);
     const data = await response.json();
     let rawWines = data.cantina || data;
+    
+    // Se il JSON è vuoto (errore 503 dal SW offline), mostra messaggio
+    if (!rawWines || rawWines.length === 0) {
+      throw new Error('Dati cantina vuoti');
+    }
     
     // Normalizza il JSON: supporta sia la vecchia struttura che la nuova (chiavi Maiuscole, spazi, array diretti)
     WINES = rawWines.map(w => {
@@ -607,6 +613,7 @@ async function loadWines() {
       };
     });
     
+    console.log('Cantina caricata:', WINES.length, 'vini');
     render();
   } catch (err) {
     console.error('Errore caricamento dati:', err);
@@ -861,9 +868,24 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 });
 
 // === SERVICE WORKER REGISTRATION ===
+// Registra il SW e forza l'aggiornamento ad ogni caricamento della pagina
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js')
-    .then(reg => console.log('Service Worker registrato:', reg.scope))
+    .then(reg => {
+      console.log('Service Worker registrato:', reg.scope);
+      // Forza il controllo aggiornamenti ogni volta che la pagina viene caricata
+      reg.update();
+      // Se c'è un nuovo SW in attesa, attivalo subito
+      reg.addEventListener('updatefound', () => {
+        const newWorker = reg.installing;
+        newWorker.addEventListener('statechange', () => {
+          if (newWorker.state === 'activated') {
+            console.log('Nuovo Service Worker attivato, ricarico la pagina...');
+            window.location.reload();
+          }
+        });
+      });
+    })
     .catch(err => console.warn('Service Worker non registrato:', err));
 }
 
