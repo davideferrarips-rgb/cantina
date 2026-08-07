@@ -1,6 +1,6 @@
 // Service Worker — La Mia Cantina PWA
 // IMPORTANTE: incrementare CACHE_VERSION ad ogni modifica per forzare l'aggiornamento
-const CACHE_VERSION = 10;
+const CACHE_VERSION = 11;
 const CACHE_NAME = 'cantina-v' + CACHE_VERSION;
 
 // Risorse statiche da pre-cachare (NO cantina.json — viene sempre preso dalla rete)
